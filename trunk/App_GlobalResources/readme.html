@@ -1,0 +1,56 @@
+<h3>Editing Resource Files after publishing in ASP.NET 2.0</h3>
+<div class="postText">
+    <p>
+        <font face="Verdana" size="2">
+
+An important point to note while globalizing your <strong>
+            ASP.NET 2.0</strong> web applications is regarding dynamic updation of the .resx files once published on the remote server. We would like to have this flexibility
+            so that the users themselves can modify values in the resource files (which are simple XML files following Microsoft ResX Schema) once the application is deployed on a server without re-compiling the entire application itself. The ability to do so depends on what project model we have followed for our web application in VS 2005.</font></p>
+    <p>
+        <font face="Verdana" size="2">If we are using the <strong>WebSite Project model</strong>
+            (which is default in VS 2005) then resource files only under the <strong>App_LocalResources</strong>
+            will get published as raw <strong>.resx</strong> files on the server as these are not compiled. These resource files can be edited on the server (as they are compiled
+            during runtime). Files under the <strong>App_GlobalResources </strong>folder are compiled into individual resource specific dlls and published on the server, so you cannot edit the resource files which are under <strong>App_GlobalResources</strong>
+            once they have been published using the WebSite project model. If you need to add new locale resources then you need to first manually generate the new .resources file using the tool <a href="http://msdn2.microsoft.com/en-us/library/ccec7sz1(VS.80).aspx">
+                resgen.exe</a> and then compile it to a satellite assembly using <a href="http://msdn2.microsoft.com/en-us/library/c405shex(VS.80).aspx">
+                    Assembly Linker tool</a>.</font></p>
+    <p>
+        <font face="Verdana" size="2">If we are using a <strong>Web Application Project (WAP)</strong>
+            model, then files both under the <strong>App_GlobalResources</strong> as well as 
+            <strong>App_LocalResources</strong> folders will get published as raw .resx files which are editable. So I think that using <strong>WAP</strong> gives you this slight flexibility which the default WebSite model does not provide.</font></p>
+    <p>
+        <font face="Verdana" size="2"><strong>
+
+Note</strong> that whenever we change any file under the <strong>/bin</strong> folder of the deployed web application, an <strong>application restart</strong> will occur, which may cause loss of data (like values stored in Session etc).</font></p>
+    <p>
+        &nbsp;</p>
+    <p>
+
+
+
+<h3>Explicit localization:</h3>
+        
+    <p>
+        This works when we have Global resource
+            files. Here we use <code>Expressions</code><span style="font-family: Times New Roman">
+                to set the values from the resource files as:
+                <br />
+                <br />
+            </span>
+    </p>
+    <pre>
+<span style="color: #0000ff; background-color: #ffff99">&lt;asp:Label id=lblWelcome Text=<span class="cpp-string">"<span style="background-color: #66ff99">&lt;%$Resources:TestSiteResources, Welcome %&gt;</span>" </span>runat=<span class="cpp-string">"server"</span>&gt;&lt;/asp:Label&gt;</span></pre>
+    <p>
+    </p>
+    <p>
+        We can set this using the VS IDE. Select the label control, go to <code><span style="color: #ff0000">
+            Properties</span></code>
+        window, select <code><span style="color: #ff0000">Expressions-&gt;Text</span></code>. Then choose <code>
+    <span style="color: #ff0000">Resources</span></code>
+        from the drop down and enter the class name (<code>TestSiteResources</code> for
+        this example) and the <code>Resource key</code> (Banner). This is the recommended
+        way to localize the UI controls on a page.
+        <br />
+    </p>
+    <p>
+        <img alt="Sample screenshot" height="411" src="localization.jpg" width="600" /></p>
