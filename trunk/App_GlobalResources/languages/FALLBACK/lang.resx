@@ -112,34 +112,34 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblCalendar" xml:space="preserve">
     <value>Select a date</value>
   </data>
   <data name="strAboutUs" xml:space="preserve">
-    <value>About us</value>
+    <value>Giới thiệu</value>
   </data>
   <data name="strContactUs" xml:space="preserve">
-    <value>Contact us</value>
+    <value>Liên hệ</value>
   </data>
   <data name="strHome" xml:space="preserve">
-    <value>Home</value>
+    <value>Trang chủ</value>
   </data>
   <data name="strNews" xml:space="preserve">
-    <value>News</value>
+    <value>Tin tức</value>
   </data>
   <data name="strOurProduct" xml:space="preserve">
-    <value>Our product</value>
+    <value>Sản phẩm</value>
   </data>
   <data name="strService" xml:space="preserve">
-    <value>Services</value>
+    <value>Dịch vụ</value>
   </data>
   <data name="strSolution" xml:space="preserve">
-    <value>Solutions</value>
+    <value>Giải pháp</value>
   </data>
   <data name="strTotalAmount" xml:space="preserve">
     <value>Total Amount is</value>
