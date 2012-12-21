@@ -45,63 +45,55 @@
                               <div class="sub_indent">
                                 <div class="wrapper row-1">
                                   <div class="col-1">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Products " style="width: 117px; height: 30px;"><canvas width="133" height="29" style="width: 133px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Products </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="list" style="width: 31px; height: 30px;"><canvas width="48" height="29" style="width: 48px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>list</cufontext></cufon>
-                                    </h3>
+                                    <h3>Loại sản phẩm
+                                       </h3>
                                     <div class="p1">
                                       <ul class="list">
-                                        <li><a href="#">Lorem ipsum damet consectetuer </a></li>
-                                        <li><a href="#">Adipiscing elit praesent vestibulum </a></li>
-                                        <li><a href="#">Molestie lacus aenean nonummy </a></li>
-                                        <li><a href="#">Hendrerit mauris phasellus porta </a></li>
-                                        <li><a href="#">Fusce suscipit varius mi cum</a></li>
-                                        <li><a href="#">Sociis natoque penatibus magnis </a></li>
-                                        <li><a href="#">Dis parturient montes nascetur </a></li>
-                                        <li><a href="#">Ridiculus mus nulla dui fusce </a></li>
-                                        <li><a href="#">Feugiat malesuada odiomorb nunc</a></li>
-                                        <li><a href="#">Odio gravida at cursus nec luctus</a></li>
-                                        <li><a href="#">Maecenas tristique orci ac sem </a></li>
-                                        <li><a href="#">Duis ultricies pharetra magna</a></li>
+                                        <li><a href="#">Ligne Soin O2ptimal </a></li>
+                                        <li><a href="#">Ligne Spaciale </a></li>
+                                        <li><a href="#">Ligne Rad  </a></li>
+                                        <li><a href="#">Ligne Rose  </a></li>
+                                        <li><a href="#">Ligne Clarifyl</a></li>
+                                        <li><a href="#">Ligne</a></li>
+                                        <li><a href="#">Ligne Homme </a></li>
+                                        <li><a href="#">Ligne Nymphea</a></li>
+                                        <li><a href="#">Ligne Phytopedic</a></li>
+                                        <li><a href="#">Ligne Sevactive</a></li>
+                                        <li><a href="#">Ligne Fondamantale </a></li>
+                                        <li><a href="#">Ligne Power Repair</a></li>
                                       </ul>
                                     </div>
                                   </div>
                                   <div class="col-2">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Featured " style="width: 122px; height: 30px;"><canvas width="139" height="29" style="width: 139px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Featured </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="products" style="width: 111px; height: 30px;"><canvas width="127" height="29" style="width: 127px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>products</cufontext></cufon>
-                                    </h3>
-                                    <p>
-                                      Sedu perspiciatis unde omnis istnatus error sivoluptatem accusantium dolore laudantium
-                                      totam rem aperiam eaquem ipsa quae abm illo inventore itae.</p>
+                                    <h3>Sản phẩm ưa chuộn
+                                            </h3>
+                                   
+                                     <p> <b>Pevonia Botanica</b> là dòng sản phẩm chăm sóc da chuyên nghiêp đươc những Spa uy tín nhất thế giới lưa chọn.với hơn 150 sản phẩm đặc biệt dùng để chăm sóc da tại nhà và hơn 100 giải pháp trị liệu chuyên nghiệp tại Spa.
+                                     </p>
+                                     <p><b>Pevonia</b> cung cấp những giải pháp trị liệu da hiệu quả cho phụ nữ và nam giới ở mọi lứa tuổi, thuộc mọi chủng tộc</p>
                                     <div class="wrapper p1">
                                       <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                      <strong>Lorem ipsum dolor sit amet, consectetuert adipiscing elit lorem dolor. </strong>
+                                      <strong>Ligne Soin O2ptimal . </strong>
                                       <p>
-                                        Sedut perspiciatis unde omnis iste natus error sivoluptatem accusantium doloremque
-                                        laudan-<br>
-                                        tium totam rem aperiam eaque ipsa quae abm illo inventore veritatis et quasin.</p>
+                                        Da của bạn có triệu chứng suy nhược và thâm màu không?<br>
+                                       </p>
                                     </div>
                                     <div class="wrapper">
                                       <img class="img-left" src="images/3page_img2.jpg" alt="">
-                                      <strong>Sed ut perspiciatis unde omnis iste natuse error sit voluptatem accusantium.
+                                      <strong>Ligne Spaciale.
                                       </strong>
                                       <p>
-                                        Svoluptatem accusantium doloremque laudan-<br>
-                                        tium totam rem aperiam eaque ipsa quae abm illo inventore veritatis quasin architecto
-                                        beatae vitae dicta sunt explicaboemo.</p>
+                                       Khi thời tiết thay đổi mọi thứ bị xáo trộn...<br>
+                                        </p>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="row-1">
                                   <h3>
-                                    <cufon class="cufon cufon-canvas" alt="Product " style="width: 106px; height: 30px;"><canvas width="123" height="29" style="width: 123px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Product </cufontext></cufon>
-                                    <cufon class="cufon cufon-canvas" alt="name" style="width: 67px; height: 30px;"><canvas width="78" height="29" style="width: 78px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>name</cufontext></cufon>
-                                  </h3>
+                                      Ligne Rose </h3>
                                   <div class="wrapper">
                                     <img class="img-left" src="images/3page_img3.jpg" alt="">
-                                    <strong>Lorem ipsum dolor sit amet consectetuert adipiscing elit lorem dolor perspiciatis
-                                      undem omnis iste natus error sit voluptatem accusantium doloremque </strong>
+                                    <strong>Rosacea hay Acne Rosacea thể hiện rỏ triệu chứng da ửng đỏ </strong>
                                     <p>
                                       Sedut perspiciatis unde omnis iste natus error sivoluptatem accusantium doloremque
                                       laudantium totam rem aperiam eaque ipsa quae abm illo inventore veritats et quasin
@@ -114,27 +106,21 @@
                               <div class="box_articles_2">
                                 <div class="wrapper row-2">
                                   <div class="col-1">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Presentation" style="width: 114px; height: 19px;"><canvas width="120" height="19" style="width: 120px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>Presentation</cufontext></cufon>
-                                    </h3>
+                                   
                                     <div class="p1">
                                       <ul class="list">
-                                        <li><a href="#">Molestie lacus aenean nonummy </a></li>
-                                        <li><a href="#">Hendrerit mauris phasellus porta </a></li>
-                                        <li><a href="#">Fusce suscipit varius mi cum</a></li>
-                                        <li><a href="#">Sociis natoque penatibus magnis </a></li>
+                                        <li><a href="#">Những nguyên liệu tốt nhất từ đại dương và thảo mộc </a></li>
+                                        <li><a href="#">Hiệu quả trị liệu được đảm bảo </a></li>
+                                        <li><a href="#">Mối quan hệ với thiên nhiên</a></li>
+                                       
                                       </ul>
                                     </div>
                                   </div>
                                   <div class="col-2">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="New " style="width: 41px; height: 19px;"><canvas width="52" height="19" style="width: 52px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>New </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="technologies" style="width: 128px; height: 19px;"><canvas width="136" height="19" style="width: 136px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>technologies</cufontext></cufon>
-                                    </h3>
+                                   
                                     <p>
-                                      <span class="it">Lorem ipsum dolor sitamet consectetuer</span> adipiscing elit raesent
-                                      vestibulum olestie lacus psum dolor sit amet, consectetuer adipiscing elit. Praesent
-                                      vestibulum molestie.</p>
+                                      <span class="it">Là những yếu tố tinh khiết nhất của thiên nhiên kết hợp với phương thức điểu chế công nghệ cao</span> 
+                                      Cho bạn sự trải nghiệm độc đáo và một kết quả hơn cả sự mông đợi</p>
                                     <p>
                                       <span class="it">Aenean nonummy hendrerit maurishasellus</span> portausce suscipit
                                       varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
