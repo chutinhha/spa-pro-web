@@ -1,0 +1,52 @@
+﻿#wrapper
+{
+	width:100%;
+	margin:0;
+	padding:0;
+	color:#5b5b5b;
+	font:normal 13px/19px Arial, Helvetica, sans-serif;
+}
+#header
+{
+	min-height:40px;
+}
+#menu
+{
+	
+}
+#menu ul
+{
+	text-decoration:none;
+	float:left;
+	margin:0;
+	padding:0;
+	margin-left:10px;
+	font-weight:bold;
+}
+#menu ul li
+{
+	float:left;
+min-width:40px;
+margin-right:5px;
+margin-bottom:5px;
+list-style-type:none;
+}
+#menu ul li a
+{
+	color:#5b5b5b;
+	text-decoration:none;
+	
+}
+#menu ul li a:active
+{
+	color:Red;
+}
+#menu ul li a:hover
+{
+	color:Red;
+}
+
+#content
+{
+	
+}
