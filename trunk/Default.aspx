@@ -54,27 +54,27 @@
               <div class="globalnews" style="margin: 0">
                 <div class="gn_static_1">
                   <center>
-                    <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=41:newsflash-5&amp;catid=3:newsflash">
-                      <img src="images/1page_img2.jpg" alt="Image" style="float: left; margin: 0; border: 0;"></a></center>
+                    <a href="#">
+                      <img src="images/1page_img2.jpg" alt="Image" style="float: left; margin: 0; border: 0; padding-right:5px;"></a></center>
                   <span class="title">12.03.2011
                     <br>
-                    <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=41:newsflash-5&amp;catid=3:newsflash">
+                    <a href="#">
                       Agna. Sed laoreet</a></span>
                   <br>
                   Ut tellus dolor, ds et, tum el cursus eleifde
                 </div>
                 <div class="gn_static_1">
                   <center>
-                    <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=2:newsflash-1&amp;catid=3:newsflash">
-                      <img src="images/1page_img3.jpg" alt="Image" style="float: left; margin: 0; border: 0;"></a></center>
+                    <a href="">
+                      <img src="images/1page_img3.jpg" alt="Image" style="float: left; margin: 0; border: 0; padding-right:5px;"></a></center>
                   <span class="title">10.03.2011
                     <br>
-                    <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=2:newsflash-1&amp;catid=3:newsflash">
+                    <a href="">
                       Us et, tum el cursu</a></span>
                   <br>
                   Eleifendelteneanauct or wisi et quisque ulla
                 </div>
-                <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=category&amp;id=3:newsflash"
+                <a href="#"
                   class="readon">More </a>
               </div>
             </div>
@@ -102,16 +102,16 @@
                 <div class="gn_static_2">
                   <div class="spacing-bot">
                     <center>
-                      <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=79:newsflash-4&amp;catid=38:welcome">
+                      <a href="">
                         <img src="images/1page_img1.jpg" alt="Image" style="float: left; margin: 0; border: 0;"></a></center>
                   </div>
-                  <span class="title"><a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=79:newsflash-4&amp;catid=38:welcome">
+                  <span class="title"><a href="">
                     Mauris fermentum dictum agna. Sed laoreet aliquam leo.</a></span>
                   <br>
                   <p>
                     Ut tellus dolor, dapibus eget, tum el cursus eleifend, elitenean auctor wi
                   </p>
-                  <span class="button"><a href="">more </a></span>
+                 <a class="readon" href="">more </a>
                 </div>
               </div>
             </div>
@@ -138,32 +138,32 @@
               <div class="globalnews" style="margin: 0">
                 <div class="gn_static_3">
                   <center>
-                    <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=82:mauris-fermentum-dictu&amp;catid=39:services">
+                    <a href="">
                       <img src="images/num1.gif" alt="Image" style="float: left; margin: 3px; border: 0;"></a></center>
-                  <span class="title"><a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=82:mauris-fermentum-dictu&amp;catid=39:services">
+                  <span class="title"><a href="">
                     Mauris fermentum dictu</a></span>
                   <br>
                   Ut tellus dolor, dapibus eg et, tum el cursus eleifend.
                 </div>
                 <div class="gn_static_3">
                   <center>
-                    <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=81:ut-tellus-dolor-dapibus-&amp;catid=39:services">
+                    <a href="">
                       <img src="images/num2.gif" alt="Image" style="float: left; margin: 3px; border: 0;"></a></center>
-                  <span class="title"><a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=81:ut-tellus-dolor-dapibus-&amp;catid=39:services">
+                  <span class="title"><a href="">
                     Ut tellus dolor, dapibus </a></span>
                   <br>
                   Eget, tum el cursus eleifend elitenean auctor wisi et isqu
                 </div>
                 <div class="gn_static_3">
                   <center>
-                    <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=80:tum-el-cursus-eleifend&amp;catid=39:services">
+                    <a href="">
                       <img src="images/num3.gif" alt="Image" style="float: left; margin: 3px; border: 0;"></a></center>
-                  <span class="title"><a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=article&amp;id=80:tum-el-cursus-eleifend&amp;catid=39:services">
+                  <span class="title"><a href="">
                     Tum el cursus eleifend</a></span>
                   <br>
                   Elitenean auctor wisi et isqu e nulla. Vestibulum libero ni
                 </div>
-                <a href="http://livedemo00.template-help.com/joomla_33640/index.php?option=com_content&amp;view=category&amp;id=39:services"
+                <a href=""
                   class="readon">More </a>
               </div>
             </div>

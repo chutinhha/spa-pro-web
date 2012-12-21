@@ -45,68 +45,40 @@
                               <div class="sub_indent">
                                 <div class="wrapper row-1">
                                   <div class="col-1">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Featured " style="width: 122px; height: 30px;"><canvas width="139" height="29" style="width: 139px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Featured </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="resources" style="width: 117px; height: 30px;"><canvas width="132" height="29" style="width: 132px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>resources</cufontext></cufon>
-                                    </h3>
-                                    <span class="color-1">Sedut perspiciatis unde omnis iste natus error sitemen voluptatem
-                                      accusantium doloremque laudantium, totam rem lorem ipsum dolor</span>
+                                    <h3>Dịch vụ trị liệu
+                                           </h3>
+                                    <span class="color-1">Pevonia mời các bạn trải nghiệm qua nhửng trị liệu tiên tiến và hiệu quả tại Spa</span>
+                                    <div class="col-1">
+                                    <h4>
+                                    Trị liệu giữ ẩm tối đa
+                                      </h4>
+                                    <img class="img-left" src="images/5page_img2.jpg" alt="">
                                     <p>
-                                      Lorem ipsum dolor siti amet, consectetuer adipiscing elit. Praesent vestibulum molestie
-                                      lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius miem
-                                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                                      mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida.</p>
-                                    <div class="p1">
-                                      <ul class="list fright">
-                                        <li><a href="#">Sociis natoque penatibus magnis </a></li>
-                                        <li><a href="#">Dis parturient montesem nascetur</a></li>
-                                        <li><a href="#">Ridiculus mus nulla dui usce feugia </a></li>
-                                        <li><a href="#">Malesuada odio morbi nunc odio </a></li>
-                                        <li><a href="#">Maecenas tristique orci ac sem </a></li>
-                                      </ul>
-                                      <ul class="list">
-                                        <li><a href="#">Lorem ipsum damet consectetuer </a></li>
-                                        <li><a href="#">Adipiscing elit praesent vestibulum </a></li>
-                                        <li><a href="#">Molestie lacus aenean nonummy </a></li>
-                                        <li><a href="#">Hendrerit mauris phasellus porta </a></li>
-                                        <li><a href="#">Fusce suscipit varius mi cum</a></li>
-                                      </ul>
-                                    </div>
-                                    <p>
-                                      Lorem ipsum dolor siti amet, consectetuer adipiscing elit. Praesent vestibulum molestie
-                                      lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius miem
-                                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                                      mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida.</p>
+                                      <span class="it">Lorem ipsum dolor sit</span> amet consectetuer adipiscing elit
+                                      raesent vestibulum olestie lacus tenean nonummy hendrerit mauris phasellus porta.
+                                      Fusce suscipit variusen mi. Cum sociis natoque.</p>
+                                    <span class="it">Sedut perspiciatis unde</span> omnis istnatus error sivoluptatem
+                                    accusantium doloren laudantium totam rem aperiam eaquem ipsa quae abm illo inventore.<p>
+                                    </p>
+                                  </div>
                                   </div>
                                   <div class="col-2">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Top " style="width: 57px; height: 30px;"><canvas width="73" height="29" style="width: 73px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Top </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="features" style="width: 99px; height: 30px;"><canvas width="115" height="29" style="width: 115px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>features</cufontext></cufon>
-                                    </h3>
+                                    <h3>Yêu thích
+                                      </h3>
                                     <img class="img-left" src="images/5page_img1.jpg" alt=""><br>
                                     <strong>Lorem ipsum dolor sit amet consec-<br>
                                       tetuert adipiscing elit lorem. </strong>
                                     <p>
                                       Sedut perspiciatis unde omnis istnatus error sivoluptatem accusantium doloren laudantium
                                       totam rem aperiam eaquem ipsa quae abm illo inventore.</p>
-                                    <div class="p1">
-                                      <ul class="list">
-                                        <li><a href="#">Lorem ipsum damet consectetuer </a></li>
-                                        <li><a href="#">Adipiscing elit praesent vestibulum </a></li>
-                                        <li><a href="#">Molestie lacus aenean nonummy </a></li>
-                                        <li><a href="#">Hendrerit mauris phasellus porta </a></li>
-                                      </ul>
-                                    </div>
+                                    
                                   </div>
                                 </div>
                               </div>
                               <div class="box_articles_2">
                                 <div class="wrapper row-2">
                                   <div class="col-1">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="featured " style="width: 82px; height: 19px;"><canvas width="93" height="19" style="width: 93px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>featured </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="exhibition" style="width: 85px; height: 19px;"><canvas width="91" height="19" style="width: 91px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>exhibition</cufontext></cufon>
-                                    </h3>
+                                    <h4>Trị liệu giúp da tuoi mới & sáng bóng</h4>
                                     <img class="img-left" src="images/5page_img2.jpg" alt=""><br>
                                     <p>
                                       <span class="it">Lorem ipsum dolor sit</span> amet consectetuer adipiscing elit
@@ -117,10 +89,7 @@
                                     </p>
                                   </div>
                                   <div class="col-1">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="featured " style="width: 82px; height: 19px;"><canvas width="93" height="19" style="width: 93px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>featured </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="procedures" style="width: 107px; height: 19px;"><canvas width="115" height="19" style="width: 115px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>procedures</cufontext></cufon>
-                                    </h3>
+                                   <h4> Trị liệu phục hồi thanh xuân</h4>
                                     <img class="img-left" src="images/5page_img3.jpg" alt=""><br>
                                     <span class="color-1">Lorem ipsum dolor sitamet consectetuer</span>
                                     <p>
@@ -133,10 +102,7 @@
                                     </p>
                                   </div>
                                   <div class="col-2">
-                                    <h3>
-                                      <cufon class="cufon cufon-canvas" alt="featured " style="width: 82px; height: 19px;"><canvas width="93" height="19" style="width: 93px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>featured </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="service" style="width: 65px; height: 19px;"><canvas width="73" height="19" style="width: 73px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>service</cufontext></cufon>
-                                    </h3>
+                                    <h4>Trị liệu phục hồi vẽ rạng rỡ</h4>
                                     <img class="img-left" src="images/5page_img4.jpg" alt=""><br>
                                     <span class="color-1">Penatibus magnis dis parturient montes </span>
                                     <p>

@@ -93,8 +93,8 @@
               <div class="right-bg">
                 <div class="left-bg">
                   <h3>
-                    <cufon class="cufon cufon-canvas" alt="Who's " style="width: 79px; height: 30px;"><canvas width="95" height="29" style="width: 95px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Who's </cufontext></cufon>
-                    <cufon class="cufon cufon-canvas" alt="Online" style="width: 81px; height: 30px;"><canvas width="92" height="29" style="width: 92px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Online</cufontext></cufon>
+                    Who's
+                 Online
                   </h3>
                 </div>
               </div>
@@ -130,8 +130,7 @@
                                         <div class="department">
                                           <br>
                                           <h3>
-                                            <cufon class="cufon cufon-canvas" alt="Our " style="width: 58px; height: 30px;"><canvas width="75" height="29" style="width: 75px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Our </cufontext></cufon>
-                                            <cufon class="cufon cufon-canvas" alt="Departments" style="width: 154px; height: 30px;"><canvas width="169" height="29" style="width: 169px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Departments</cufontext></cufon>
+                                            Our Departments
                                           </h3>
                                           <br>
                                           <div class="wrapper">

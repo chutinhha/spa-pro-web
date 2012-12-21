@@ -46,9 +46,8 @@
                                 <div class="wrapper row-1">
                                   <div class="col-1">
                                     <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Featured " style="width: 122px; height: 30px;"><canvas width="139" height="29" style="width: 139px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Featured </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="news" style="width: 60px; height: 30px;"><canvas width="75" height="29" style="width: 75px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>news</cufontext></cufon>
-                                    </h3>
+                                    Tin tức
+                                       </h3>
                                     <div class="wrapper">
                                       <img class="img-left1" src="images/4page_img1.jpg" alt="">
                                       <strong>20.09.2010</strong><br>
@@ -82,8 +81,8 @@
                                   </div>
                                   <div class="col-1">
                                     <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Special " style="width: 102px; height: 30px;"><canvas width="119" height="29" style="width: 119px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Special </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="events" style="width: 80px; height: 30px;"><canvas width="95" height="29" style="width: 95px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>events</cufontext></cufon>
+                                      Special 
+                                     events
                                     </h3>
                                     <img class="img-indent" src="images/4page_img5.jpg" alt=""><br>
                                     <strong>Lorem ipsum dolor siamet consectetuert adipiscing elit lorem. </strong>
@@ -105,8 +104,8 @@
                                   </div>
                                   <div class="col-2">
                                     <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Recent " style="width: 95px; height: 30px;"><canvas width="111" height="29" style="width: 111px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Recent </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="events" style="width: 80px; height: 30px;"><canvas width="95" height="29" style="width: 95px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>events</cufontext></cufon>
+                                     Recent
+                                    events
                                     </h3>
                                     <strong>Lorem ipsum dolor sit amet consec-<br>
                                       tetuert adipiscing elit lorem. </strong>
@@ -139,8 +138,8 @@
                               <div class="box_articles_2">
                                 <div class="wrapper row-2">
                                   <h3>
-                                    <cufon class="cufon cufon-canvas" alt="What's " style="width: 60px; height: 19px;"><canvas width="71" height="19" style="width: 71px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>What's </cufontext></cufon>
-                                    <cufon class="cufon cufon-canvas" alt="new?" style="width: 43px; height: 19px;"><canvas width="52" height="19" style="width: 52px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>new?</cufontext></cufon>
+                                     What's
+                                   new?
                                   </h3>
                                   <p>
                                     <span class="it">Lorem ipsum dolor sitamet consectetuer</span> adipiscing elit raesent

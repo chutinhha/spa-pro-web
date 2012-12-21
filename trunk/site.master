@@ -15,16 +15,15 @@
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" href="css/superfish.css" type="text/css" />
   <style type="text/css">
-    <!--
+
 .gn_clear { clear:both; height:0; line-height:0; }
 .gn_header_1 { background-color:0; border:0; border-bottom:none; padding:0px; }
-.gn_static_1 { border:0; padding:0px; height:87px; background-color:0; overflow:hidden; }
+.gn_static_1 { border:0; padding:0px; min-height:87px; padding-bottom:20px; background-color:0; overflow:hidden; }
 .gn_header_2 { background-color:0; border:0; border-bottom:none; padding:0px; }
 .gn_static_2 { border:0; padding:0px; height:270px; background-color:0; overflow:hidden; }
 .gn_header_3 { background-color:0; border:0; border-bottom:none; padding:0px; }
 .gn_static_3 { border:0; padding:0px; height:80px; background-color:0; overflow:hidden; }
 #ais_50b6df880cba6_wrapper{width:866px;height:354px;}
-    -->
   </style>
   <script type="text/javascript" src="js/mootools.js"></script>
   <script type="text/javascript" src="js/caption.js"></script>

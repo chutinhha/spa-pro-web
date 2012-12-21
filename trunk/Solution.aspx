@@ -46,8 +46,8 @@
                                 <div class="wrapper row-1">
                                   <div class="col-1">
                                     <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Our " style="width: 58px; height: 30px;"><canvas width="75" height="29" style="width: 75px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Our </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="solutions" style="width: 105px; height: 30px;"><canvas width="120" height="29" style="width: 120px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>solutions</cufontext></cufon>
+                                     Our 
+                                      solutions
                                     </h3>
                                     <img class="p1" src="images/6page_img1.jpg" alt=""><br>
                                     <div class="p1">
@@ -62,8 +62,8 @@
                                   </div>
                                   <div class="col-2">
                                     <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Solutions " style="width: 117px; height: 30px;"><canvas width="134" height="29" style="width: 134px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Solutions </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="showcase" style="width: 121px; height: 30px;"><canvas width="131" height="29" style="width: 131px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>showcase</cufontext></cufon>
+                                      Solutions 
+                                     showcase
                                     </h3>
                                     <div class="wrapper p1">
                                       <img class="img-left" src="images/6page_img2.jpg" alt="">
@@ -86,8 +86,8 @@
                                 </div>
                                 <div class="row-1">
                                   <h3>
-                                    <cufon class="cufon cufon-canvas" alt="About " style="width: 86px; height: 30px;"><canvas width="103" height="29" style="width: 103px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>About </cufontext></cufon>
-                                    <cufon class="cufon cufon-canvas" alt="solutions" style="width: 105px; height: 30px;"><canvas width="120" height="29" style="width: 120px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>solutions</cufontext></cufon>
+                               About 
+                                    solutions
                                   </h3>
                                   <strong>Lorem ipsum dolor siti amet consectetuert adipiscing elit lorem dolor perspiciatis
                                     undem omnis iste natus error sit voluptatem accusantium doloremque unde omnis iste
@@ -111,8 +111,8 @@
                                 <div class="wrapper row-2">
                                   <div class="col-1">
                                     <h3>
-                                      <cufon class="cufon cufon-canvas" alt="Ideal " style="width: 48px; height: 19px;"><canvas width="59" height="19" style="width: 59px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>Ideal </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="solutions" style="width: 93px; height: 19px;"><canvas width="101" height="19" style="width: 101px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>solutions</cufontext></cufon>
+                                      Ideal
+                                     solutions
                                     </h3>
                                     <div class="p1">
                                       <ul class="list">
@@ -125,8 +125,8 @@
                                   </div>
                                   <div class="col-2">
                                     <h3>
-                                      <cufon class="cufon cufon-canvas" alt="customers " style="width: 106px; height: 19px;"><canvas width="117" height="19" style="width: 117px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>customers </cufontext></cufon>
-                                      <cufon class="cufon cufon-canvas" alt="solutions" style="width: 93px; height: 19px;"><canvas width="101" height="19" style="width: 101px; height: 19px; top: 0px; left: 0px;"></canvas><cufontext>solutions</cufontext></cufon>
+                                      customers 
+                                     solutions
                                     </h3>
                                     <p>
                                       <span class="it">Lorem ipsum dolor sitamet consectetuer</span> adipiscing elit raesent
