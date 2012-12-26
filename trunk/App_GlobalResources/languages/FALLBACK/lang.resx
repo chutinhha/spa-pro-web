@@ -135,6 +135,9 @@
   <data name="strOurProduct" xml:space="preserve">
     <value>Sản phẩm</value>
   </data>
+  <data name="strPrice" xml:space="preserve">
+    <value>Báo giá</value>
+  </data>
   <data name="strService" xml:space="preserve">
     <value>Dịch vụ</value>
   </data>

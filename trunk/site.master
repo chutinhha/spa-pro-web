@@ -1,11 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="site" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" class="cufon-active cufon-ready">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
   <title></title>
   <link href="css/css.css" rel="stylesheet" type="text/css">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="">
   <meta name="description" content="">
@@ -106,7 +105,7 @@
   <!--[if IE 6]><script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script><![endif]-->
   <link rel="stylesheet" href="css/constant.css" type="text/css" />
   <link rel="stylesheet" href="css/template.css" type="text/css" />
-  <style type="text/css" charset="utf-8">
+  <style type="text/css" >
     /* See license.txt for terms of usage */
     /** reset styling **/
     .firebugResetStyles
@@ -271,7 +270,7 @@
             <img title="Naturex" src="images/logo.png" alt="Naturex"></a></h1>
         <ul class="menu-user">
           <li class="item20"><a href="#">
-            <img src="images/icon-1.gif" alt="support" align="left"><span>Support</span></a></li><li
+            <img src="images/icon-1.gif" alt="support" align="left"><span>Hỗ trợ</span></a></li><li
               class="item51"><a href="#">
                 <img src="images/icon-2.gif" alt="sign-up-for-email" align="left"><span>Sign-up for
                   Email</span></a></li><li class="item497"><a href="#">
