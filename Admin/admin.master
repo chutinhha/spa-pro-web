@@ -5,36 +5,374 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="description" content="CMS admin SpaPro" />
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/admin/style.css" media="all" type="text/css" />
+    <script type="text/javascript" src="../js/admin/jquery.js"></script>
+    <script type="text/javascript" src="../js/admin/template-cms.js"></script>
+    <style>
+        #pages-other {
+            margin-left: 10px;
+            width: 780px;
+        }
+
+        #pages-other-toggle {
+            -webkit-border-bottom-right-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-radius-bottomright: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background: #EEEEEE;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+            #pages-other-toggle:hover {
+                background: #E9EAEA;
+            }
+
+        #pages-other-box {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            display: none;
+            padding: 15px;
+        }
+
+        .error-none {
+            display: none;
+        }
+    </style>
+    <script>
+        $().ready(function () {
+            $("#pages-other-toggle").click(function () {
+                $("#pages-other-box").slideToggle("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        .filesmanager-main {
+            color: #737373;
+            float: left;
+            width: 600px;
+        }
+
+        .filesmanager-tr {
+            border-bottom: 1px solid #f2f2f2;
+        }
+
+            .filesmanager-tr:hover {
+                background: #FBF4DF;
+            }
+
+        .filesmanager-td {
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #filesmanager-upload {
+            border: 1px solid #DDD;
+            float: right;
+            margin-left: 20px;
+            padding: 10px 20px;
+            width: 250px;
+        }
+
+        input.file {
+            position: relative;
+            text-align: right;
+            -moz-opacity: 0;
+            filter: alpha(opacity: 0);
+            opacity: 0;
+            z-index: 2;
+        }
+
+        .file-ext {
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            background: #F2F2F2;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            color: #4E4131;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            line-height: 10px;
+        }
+
+            .file-ext:hover {
+                background: #E5DED7;
+                color: #000;
+            }
+    </style>
+    <style>
+        #snippets {
+            margin-left: 10px;
+            margin-top: -16px;
+        }
+
+        #snippets-toggle {
+            -webkit-border-bottom-right-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-radius-bottomright: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background: #EEEEEE;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+            #snippets-toggle:hover {
+                background: #E9EAEA;
+            }
+
+        #snippets-box {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            display: none;
+            padding-top: 15px;
+        }
+    </style>
+    <script>
+        $().ready(function () {
+            $("#snippets-toggle").click(function () {
+                $("#snippets-box").slideToggle("slow");
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="http://demo.opensourcecms.com/templatecms/plugins/box/cleditor/cleditor/jquery.cleditor.css" />
+    <script type="text/javascript" src="http://demo.opensourcecms.com/templatecms/plugins/box/cleditor/cleditor/jquery.cleditor.min.js"></script>
+    <script type="text/javascript" src="http://demo.opensourcecms.com/templatecms/plugins/box/cleditor/cleditor/jquery.cleditor.plugins.js"></script>
+    <script type="text/javascript">
+        // CLEditor plusimage Plugin v1.0
+        (function ($) {
+            // Constants this must be updated with your Path and Text
+            var
+            PATH = window.location.host,//without Slash (/) at the end
+            //Translation
+            VALUETEXT = "Click to Call KCFinder",
+            BUTTONTEXT = "Submit",
+            TITLETEXT = "Insert image from the server",
+            PROMPTTEXT = "Cleditor link";
+            // Define the plusimage button
+            $.cleditor.buttons.plusimage = {
+                name: "plusimage",
+                image: "plusimage.gif",
+                title: TITLETEXT,
+                command: "insertimage",
+                popupName: "Plusimage",
+                popupClass: "cleditorPrompt",
+                popupContent:
+                  PROMPTTEXT + "<br>" +
+                  "<input type=\"text\" readonly=\"readonly\" onclick=\"openKCFinder(this)\" value=\"" + VALUETEXT + "\" style=\"width:300px;cursor:pointer\" /><br>" +
+                  "<input type=button value=\"" + BUTTONTEXT + "\">",
+                buttonClick: plusimageButtonClick
+            };
+            // Add the button to the default controls
+            $.cleditor.defaultOptions.controls = $.cleditor.defaultOptions.controls
+              .replace("rule image", "rule plusimage");
+            // plusimage button click event handler
+            function plusimageButtonClick(e, data) {
+                // Wire up the submit button click event handler
+                $(data.popup).children(":button")
+                  .unbind("click")
+                  .bind("click", function (e) {
+                      // Get the editor
+                      var editor = data.editor;
+                      // Get the value
+                      var $text = $(data.popup).find(":text"),
+                        image_path = "http://" + PATH + $text[0].value;
+                      // Insert the html
+                      editor.execCommand(data.command, image_path, null, data.button);
+                      // Reset the text, hide the popup and set focus
+                      $text.val(VALUETEXT);
+                      editor.hidePopups();
+                      editor.focus();
+                  });
+            }
+        })(jQuery);
+
+        $(document).ready(function () {
+            $("#editor_area").cleditor({
+                width: "auto",
+                height: 400,
+                controls:
+                              "bold italic underline strikethrough subscript superscript | font size " +
+                              "style | color highlight removeformat | bullets numbering | outdent " +
+                              "indent | alignleft center alignright justify | undo redo | " +
+                              "rule table image plusimage link unlink | pastetext | source",
+                colors:
+                              "FFF FCC FC9 FF9 FFC 9F9 9FF CFF CCF FCF " +
+                              "CCC F66 F96 FF6 FF3 6F9 3FF 6FF 99F F9F " +
+                              "BBB F00 F90 FC6 FF0 3F3 6CC 3CF 66C C6C " +
+                              "999 C00 F60 FC3 FC0 3C0 0CC 36F 63F C3C " +
+                              "666 900 C60 C93 990 090 399 33F 60C 939 " +
+                              "333 600 930 963 660 060 366 009 339 636 " +
+                              "000 300 630 633 330 030 033 006 309 303",
+                fonts:
+                              "Arial,Arial Black,Comic Sans MS,Courier New,Narrow,Garamond," +
+                              "Georgia,Impact,Sans Serif,Serif,Tahoma,Trebuchet MS,Verdana",
+                sizes:
+                              "1,2,3,4,5,6,7",
+                styles:
+                              [["Paragraph", "<p>"], ["Header 1", "<h1>"], ["Header 2", "<h2>"],
+                              ["Header 3", "<h3>"], ["Header 4", "<h4>"], ["Header 5", "<h5>"],
+                              ["Header 6", "<h6>"]],
+
+                useCSS: false,
+
+                docCSSFile: "",
+                bodyStyle: "margin:4px; font:10pt Arial,Verdana; cursor:text"
+            });
+        });
+
+        function openKCFinder(field) {
+            window.KCFinder = {
+                callBack: function (url) {
+                    window.KCFinder = null;
+                    field.value = url;
+                }
+            };
+
+            window.open("http://demo.opensourcecms.com/templatecms/plugins/box/cleditor/kcfinder/browse.php?type=image&lang=en", "kcfinder_textbox",
+                "status=0, toolbar=0, location=0, menubar=0, directories=0, " +
+                "resizable=0, scrollbars=0, width=800, height=600"
+            );
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="../css/admin.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="wrapper">
-      <div id="header">
-       
-      </div>
-      <div id="menu">
-      <ul>
-        <li>
-          <a>Quản lý thông tin giới thiệu</a>
-        </li>
-        <li>
-        <a href="#">Quản lý dịch vụ</a>
-        </li>
-        <li>
-        
-        </li>
-      </ul>
-      </div>
-      <div id="content">
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+    <!-- Block_wrapper -->
+    <div id="header-inside-buttons">
+
+        <!-- Top navigation for third party plugins -->
+        <a href="?id=system&sub_id=users&action=edit&user_id=1">Welcome, <b>admin</b></a>&nbsp;       
+        <!-- / -->
+
+        <!-- Top navigation for system plugin only -->
+        <a target="_blank" href="http://demo.opensourcecms.com/templatecms/">site</a>&nbsp;&nbsp;<a href="http://demo.opensourcecms.com/templatecms/admin/index.php?logout=do">logout</a>
+        <!-- / -->
+
     </div>
+    <!-- Block_header -->
+    <div id="header">
+        <div id="header-inside">
+
+            <!-- Block_logo -->
+            <div id="logo">
+                <img src="../images/tcms2.png" alt="" />
+            </div>
+            <!-- /Block_logo -->
+
+            <!-- Block_menu -->
+            <ul id="menu">
+                <li><a href="?id=pages" class="current">Nội dung</a></li>
+                <li><a href="?id=plugins">Sản phẩm</a></li>
+                <li><a href="?id=themes">Dịch vụ</a></li>
+                <li><a href="?id=system">Giải pháp</a></li>
+                <li><a href="?id=system">Tin tức</a></li>
+
+            </ul>
+            <!-- /Block_menu -->
+
+            <!-- Block_sub_menu -->
+            <ul id="sub-menu">
+                <li><a href="?id=pages" class="sub-current">Trang </a></li>
+                <li><a href="?id=pages&sub_id=filesmanager">Báo giá</a></li>
+            </ul>
+            <!-- /Block_sub_menu -->
+
+        </div>
     </div>
-    
+    <!-- /Block_header -->
+
+    <div style="clear: both;"></div>
+
+    <div>
+    </div>
+
+    <!-- Block_content -->
+    <div id="content">
+        <!-- Pages_buttons -->
+        <div id="section-bar">
+            <span class="btn"><a href="?id=pages&action=add_page" title="+ Add">+ Add</a></span>
+        </div>
+        <!-- /Pages_buttons -->
+
+        <div style="clear: both"></div>
+
+        <!-- Pages_list -->
+        <table class="admin-table">
+            <thead class="admin-table-header">
+                <tr>
+                    <td class="admin-table-field">Trang</td>
+                    <td class="admin-table-field" align="center">Ngày</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody class="admin-table-content">
+                <tr style="background: #F2F2F2;" class="admin-table-tr">
+                    <td class="admin-table-titles admin-table-field">
+                        <a href="../About.aspx" target="_blank" title="About">Giới thiệu</a>
+                    </td>
+                    <td class="admin-table-field date" align="center">9.10.2011        </td>
+                    <td class="admin-table-field" align="right">
+                        <span class="btn-plus"><a href="?id=pages&action=add_page&parent_page=about" title="+ Add">+</a></span>
+                        <span class="btn-edit"><a href="index.php?id=pages&action=clone_page&filename=about" title="+1">+1</a></span>
+                        <span class="btn-edit"><a href="index.php?id=pages&action=edit_page&filename=about" title="Edit">Edit</a></span>                            <span class="btn-delete"><a href="index.php?id=pages&action=delete_page&filename=about" title="Delete" onclick="return confirmDelete('Delete')">Delete</a></span>                    </td>
+                </tr>
+                <tr style="background: #F2F2F2;" class="admin-table-tr">
+                    <td class="admin-table-titles admin-table-field">
+                        <span class="error404-link"><a href="http://demo.opensourcecms.com/templatecms/error404" target="_blank" title="error404">error404</a>            
+                    </td>
+                    <td class="admin-table-field date" align="center">18.12.2010        </td>
+                    <td class="admin-table-field" align="right">
+
+
+                        <span class="btn-edit"><a href="index.php?id=pages&action=edit_page&filename=error404" title="Edit">Edit</a></span>                            <span class="btn-delete-disable"><a href="" title="Delete">Delete</a></span>                    </td>
+                </tr>
+                <tr style="background: #F2F2F2;" class="admin-table-tr">
+                    <td class="admin-table-titles admin-table-field">
+                        <a href="http://demo.opensourcecms.com/templatecms/home" target="_blank" title="Home">Home</a>
+                    </td>
+                    <td class="admin-table-field date" align="center">29.1.2011        </td>
+                    <td class="admin-table-field" align="right">
+                        <span class="btn-plus"><a href="?id=pages&action=add_page&parent_page=home" title="+ Add">+</a></span>
+                        <span class="btn-edit"><a href="index.php?id=pages&action=clone_page&filename=home" title="+1">+1</a></span>
+                        <span class="btn-edit"><a href="index.php?id=pages&action=edit_page&filename=home" title="Edit">Edit</a></span>                            <span class="btn-delete"><a href="index.php?id=pages&action=delete_page&filename=home" title="Delete" onclick="return confirmDelete('Delete')">Delete</a></span>                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- /Pages_list -->
+    </div>
+    <!-- /Block_content -->
+
+    <div>
+    </div>
+
+    <!-- Block_footer -->
+    <div id="footer">
+        Powered by <a href="#" target="_blank">Tinh Viet</a>        
+        <!-- Elapsed time 0.009 seconds -->
+        <!-- Memory usage: 954.66 kb -->
+    </div>
+    <!-- Block_footer -->
+
+    <!-- /Block_wrapper -->
+        <asp:ContentPlaceHolder runat="server" ID="cntDetails"></asp:ContentPlaceHolder>
     </form>
 </body>
 </html>

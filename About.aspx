@@ -11,7 +11,12 @@
       <asp:Literal ID="Literal2" runat="server" Text=' <%$ Resources:lang, strAboutUs %>' /></span></a>
     </li>
     <li class="item55"><a href="Product.aspx"><span>
-      <asp:Literal ID="Literal3" runat="server" Text=' <%$ Resources:lang, strOurProduct %>' /></span></a></li><li
+      <asp:Literal ID="Literal3" runat="server" Text=' <%$ Resources:lang, strOurProduct %>' /></span></a></li>
+       <li class="item55 "><a href="Prices.aspx"><span>
+            <asp:Literal ID="Literal8" runat="server" Text=' <%$ Resources:lang, strPrice %>' /></span></a>
+
+        </li>
+      <li
         class="item470"><a href="Service.aspx"><span>
           <asp:Literal ID="Literal4" runat="server" Text="<%$ Resources:lang, strService %>" /></span></a></li>
     <li class="item117"><a href="LastestNew.aspx"><span>
