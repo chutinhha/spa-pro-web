@@ -259,7 +259,7 @@
     <div id="header-inside-buttons">
 
         <!-- Top navigation for third party plugins -->
-        <a href="?id=system&sub_id=users&action=edit&user_id=1">Welcome, <b>admin</b></a>&nbsp;       
+        <a href="AdSolution.aspx&sub_id=users&action=edit&user_id=1">Welcome, <b>admin</b></a>&nbsp;       
         <!-- / -->
 
         <!-- Top navigation for system plugin only -->
@@ -278,22 +278,10 @@
             <!-- /Block_logo -->
 
             <!-- Block_menu -->
-            <ul id="menu">
-                <li><a href="?id=pages" class="current">Nội dung</a></li>
-                <li><a href="?id=plugins">Sản phẩm</a></li>
-                <li><a href="?id=themes">Dịch vụ</a></li>
-                <li><a href="?id=system">Giải pháp</a></li>
-                <li><a href="?id=system">Tin tức</a></li>
+            <asp:ContentPlaceHolder ID="cntMenu" runat="server"></asp:ContentPlaceHolder>
+           
 
-            </ul>
-            <!-- /Block_menu -->
-
-            <!-- Block_sub_menu -->
-            <ul id="sub-menu">
-                <li><a href="?id=pages" class="sub-current">Trang </a></li>
-                <li><a href="?id=pages&sub_id=filesmanager">Báo giá</a></li>
-            </ul>
-            <!-- /Block_sub_menu -->
+            
 
         </div>
     </div>
@@ -306,57 +294,8 @@
 
     <!-- Block_content -->
     <div id="content">
-        <!-- Pages_buttons -->
-        <div id="section-bar">
-            <span class="btn"><a href="?id=pages&action=add_page" title="+ Add">+ Add</a></span>
-        </div>
-        <!-- /Pages_buttons -->
-
-        <div style="clear: both"></div>
-
-        <!-- Pages_list -->
-        <table class="admin-table">
-            <thead class="admin-table-header">
-                <tr>
-                    <td class="admin-table-field">Trang</td>
-                    <td class="admin-table-field" align="center">Ngày</td>
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody class="admin-table-content">
-                <tr style="background: #F2F2F2;" class="admin-table-tr">
-                    <td class="admin-table-titles admin-table-field">
-                        <a href="../About.aspx" target="_blank" title="About">Giới thiệu</a>
-                    </td>
-                    <td class="admin-table-field date" align="center">9.10.2011        </td>
-                    <td class="admin-table-field" align="right">
-                        <span class="btn-plus"><a href="?id=pages&action=add_page&parent_page=about" title="+ Add">+</a></span>
-                        <span class="btn-edit"><a href="index.php?id=pages&action=clone_page&filename=about" title="+1">+1</a></span>
-                        <span class="btn-edit"><a href="index.php?id=pages&action=edit_page&filename=about" title="Edit">Edit</a></span>                            <span class="btn-delete"><a href="index.php?id=pages&action=delete_page&filename=about" title="Delete" onclick="return confirmDelete('Delete')">Delete</a></span>                    </td>
-                </tr>
-                <tr style="background: #F2F2F2;" class="admin-table-tr">
-                    <td class="admin-table-titles admin-table-field">
-                        <span class="error404-link"><a href="http://demo.opensourcecms.com/templatecms/error404" target="_blank" title="error404">error404</a>            
-                    </td>
-                    <td class="admin-table-field date" align="center">18.12.2010        </td>
-                    <td class="admin-table-field" align="right">
-
-
-                        <span class="btn-edit"><a href="index.php?id=pages&action=edit_page&filename=error404" title="Edit">Edit</a></span>                            <span class="btn-delete-disable"><a href="" title="Delete">Delete</a></span>                    </td>
-                </tr>
-                <tr style="background: #F2F2F2;" class="admin-table-tr">
-                    <td class="admin-table-titles admin-table-field">
-                        <a href="http://demo.opensourcecms.com/templatecms/home" target="_blank" title="Home">Home</a>
-                    </td>
-                    <td class="admin-table-field date" align="center">29.1.2011        </td>
-                    <td class="admin-table-field" align="right">
-                        <span class="btn-plus"><a href="?id=pages&action=add_page&parent_page=home" title="+ Add">+</a></span>
-                        <span class="btn-edit"><a href="index.php?id=pages&action=clone_page&filename=home" title="+1">+1</a></span>
-                        <span class="btn-edit"><a href="index.php?id=pages&action=edit_page&filename=home" title="Edit">Edit</a></span>                            <span class="btn-delete"><a href="index.php?id=pages&action=delete_page&filename=home" title="Delete" onclick="return confirmDelete('Delete')">Delete</a></span>                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- /Pages_list -->
+        <asp:ContentPlaceHolder runat="server" ID="cntDetails"></asp:ContentPlaceHolder>
+       
     </div>
     <!-- /Block_content -->
 
@@ -372,7 +311,7 @@
     <!-- Block_footer -->
 
     <!-- /Block_wrapper -->
-        <asp:ContentPlaceHolder runat="server" ID="cntDetails"></asp:ContentPlaceHolder>
+        
     </form>
 </body>
 </html>
