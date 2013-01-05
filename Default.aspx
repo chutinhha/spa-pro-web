@@ -12,11 +12,9 @@
         </li>
         <li class="item55 "><a href="Product.aspx"><span>
             <asp:Literal ID="Literal3" runat="server" Text=' <%$ Resources:lang, strOurProduct %>' /></span></a>
-
         </li>
-         <li class="item55 "><a href="Prices.aspx"><span>
+        <li class="item55 "><a href="Prices.aspx"><span>
             <asp:Literal ID="Literal8" runat="server" Text=' <%$ Resources:lang, strPrice %>' /></span></a>
-
         </li>
         <li class="item470 "><a href="Service.aspx"><span>
             <asp:Literal ID="Literal4" runat="server" Text="<%$ Resources:lang, strService %>" /></span></a></li>
@@ -61,9 +59,10 @@
                                 <div class="gn_static_1">
                                     <center>
                                         <a href="#">
-                                            <img src="images/1page_img2.jpg" alt="Image" style="float: left; margin: 0; border: 0; padding-right: 5px;"></a></center>
+                                            <img src="images/1page_img2.jpg" alt="Image" style="float: left; margin: 0; border: 0;
+                                                padding-right: 5px;"></a></center>
                                     <span class="title">12.03.2011
-                    <br>
+                                        <br>
                                         <a href="#">Agna. Sed laoreet</a></span>
                                     <br>
                                     Ut tellus dolor, ds et, tum el cursus eleifde
@@ -71,15 +70,15 @@
                                 <div class="gn_static_1">
                                     <center>
                                         <a href="">
-                                            <img src="images/1page_img3.jpg" alt="Image" style="float: left; margin: 0; border: 0; padding-right: 5px;"></a></center>
+                                            <img src="images/1page_img3.jpg" alt="Image" style="float: left; margin: 0; border: 0;
+                                                padding-right: 5px;"></a></center>
                                     <span class="title">10.03.2011
-                    <br>
+                                        <br>
                                         <a href="">Us et, tum el cursu</a></span>
                                     <br>
                                     Eleifendelteneanauct or wisi et quisque ulla
                                 </div>
-                                <a href="#"
-                                    class="readon">More </a>
+                                <a href="#" class="readon">More </a>
                             </div>
                         </div>
                         <div class="gn_clear">
@@ -163,8 +162,7 @@
                                     <br>
                                     Elitenean auctor wisi et isqu e nulla. Vestibulum libero ni
                                 </div>
-                                <a href=""
-                                    class="readon">More </a>
+                                <a href="" class="readon">More </a>
                             </div>
                         </div>
                         <div class="gn_clear">
@@ -185,7 +183,7 @@
                             <div class="right-bg">
                                 <div class="left-bg">
                                     <h3>
-                                        <cufon style="width: 112px; height: 19px;" alt="Testimonials" class="cufon cufon-canvas"><canvas style="width: 120px; height: 19px; top: 0px; left: 0px;" height="19" width="120"></canvas><cufontext>Testimonials</cufontext></cufon>
+                                        Testimonials
                                     </h3>
                                 </div>
                             </div>
@@ -198,9 +196,10 @@
                                     <div class="author">
                                         Donna Smith.
                                     </div>
+                                    <br />
                                     <span class="theme"><a href="#">Praesent vestibulum olestie lacus.</a></span><br>
                                     Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-                  sociis natoque pena. </li>
+                                    sociis natoque pena. </li>
                             </ul>
                         </div>
                     </div>
@@ -209,28 +208,17 @@
             <!--left-->
             <!--center-->
             <h3>
-                <cufon style="width: 30px; height: 19px;" alt="We " class="cufon cufon-canvas"><canvas style="width: 41px; height: 19px; top: 0px; left: 0px;" height="19" width="41"></canvas><cufontext>We </cufontext></cufon>
-                <cufon style="width: 57px; height: 19px;" alt="offer " class="cufon cufon-canvas"><canvas style="width: 68px; height: 19px; top: 0px; left: 0px;" height="19" width="68"></canvas><cufontext>offer </cufontext></cufon>
-                <cufon style="width: 17px; height: 19px;" alt="a " class="cufon cufon-canvas"><canvas style="width: 28px; height: 19px; top: 0px; left: 0px;" height="19" width="28"></canvas><cufontext>a </cufontext></cufon>
-                <cufon style="width: 51px; height: 19px;" alt="huge " class="cufon cufon-canvas"><canvas style="width: 62px; height: 19px; top: 0px; left: 0px;" height="19" width="62"></canvas><cufontext>huge </cufontext></cufon>
-                <cufon style="width: 94px; height: 19px;" alt="selection " class="cufon cufon-canvas"><canvas style="width: 105px; height: 19px; top: 0px; left: 0px;" height="19" width="105"></canvas><cufontext>selection </cufontext></cufon>
-                <cufon style="width: 31px; height: 19px;" alt="of " class="cufon cufon-canvas"><canvas style="width: 42px; height: 19px; top: 0px; left: 0px;" height="19" width="42"></canvas><cufontext>of </cufontext></cufon>
-                <cufon style="width: 34px; height: 19px;" alt="spa " class="cufon cufon-canvas"><canvas style="width: 45px; height: 19px; top: 0px; left: 0px;" height="19" width="45"></canvas><cufontext>spa </cufontext></cufon>
-                <cufon style="width: 46px; height: 19px;" alt="parts" class="cufon cufon-canvas"><canvas style="width: 54px; height: 19px; top: 0px; left: 0px;" height="19" width="54"></canvas><cufontext>parts</cufontext></cufon>
-                <br>
-                <cufon style="width: 39px; height: 19px;" alt="and " class="cufon cufon-canvas"><canvas style="width: 50px; height: 19px; top: 0px; left: 0px;" height="19" width="50"></canvas><cufontext>and </cufontext></cufon>
-                <cufon style="width: 34px; height: 19px;" alt="spa " class="cufon cufon-canvas"><canvas style="width: 45px; height: 19px; top: 0px; left: 0px;" height="19" width="45"></canvas><cufontext>spa </cufontext></cufon>
-                <cufon style="width: 112px; height: 19px;" alt="accessories" class="cufon cufon-canvas"><canvas style="width: 120px; height: 19px; top: 0px; left: 0px;" height="19" width="120"></canvas><cufontext>accessories</cufontext></cufon>
+                We offer a huge selection of spa parts and spa accessories
             </h3>
             <p>
                 <span class="it">Lorem ipsum dolor sit amet,</span>consectetuer adipiscing elit.
-        Praesent vestibulum olestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.
-        Fusce suscipit varius mi. Cum sociis
+                Praesent vestibulum olestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.
+                Fusce suscipit varius mi. Cum sociis
             </p>
             <p>
                 Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus museugiat
-        malesuada
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus museugiat
+                malesuada
             </p>
             <p>
                 <a class="readon" href="">more</a>
@@ -250,7 +238,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pagin-bottom" align="center" valign="top"></td>
+                                    <td class="pagin-bottom" align="center" valign="top">
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
