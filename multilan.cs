@@ -3,7 +3,7 @@ using System.Globalization;
 
 public partial class _multilan : PageBase
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public void Page_Load(object sender, EventArgs e)
     {
         txtMoney.Text = string.Format("{0:c}",63343455.67);
 
@@ -18,7 +18,7 @@ public partial class _multilan : PageBase
         }
     }
 
-    protected void btnLanguages_Click(object sender, EventArgs e)
+    public void btnLanguages_Click(object sender, EventArgs e)
     {
         if (ddlLanguages.Items.Count > 0) //make sure there is a SelectedValue
         {

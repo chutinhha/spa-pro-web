@@ -5,7 +5,7 @@ public class PageBase : Page
 {
     private const string SESSION_KEY_LANGUAGE = "CURRENT_LANGUAGE";
 
-    protected override void InitializeCulture()
+    public override void InitializeCulture()
     {
         base.InitializeCulture();
         
@@ -28,7 +28,7 @@ public class PageBase : Page
         Session.Add(SESSION_KEY_LANGUAGE, LanguageManager.CurrentCulture);
     }
 
-    protected void ApplyNewLanguageAndRefreshPage(CultureInfo culture)
+    public void ApplyNewLanguageAndRefreshPage(CultureInfo culture)
     {
         ApplyNewLanguage(culture);
         //Refresh the current page to make all control-texts take effect
