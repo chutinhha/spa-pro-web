@@ -17,8 +17,9 @@ public partial class Admin_Login : System.Web.UI.Page
         string pass = txtPass.Value;
         if (userName == "admin" && pass=="demo123")
         {
-            Response.Redirect("../Admin/Default.aspx");
             Session["user"] = userName;
+            Response.Redirect("../Admin/Default.aspx");
+            
         }
         else
         {

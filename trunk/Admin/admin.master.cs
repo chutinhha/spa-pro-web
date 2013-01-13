@@ -9,6 +9,12 @@ public partial class Admin_admin : System.Web.UI.MasterPage
 {
     public void Page_Load(object sender, EventArgs e)
     {
-
+        if (!Page.IsPostBack)
+        {
+            if (Session["user"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+        }
     }
 }
