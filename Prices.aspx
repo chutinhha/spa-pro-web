@@ -28,9 +28,9 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="contentBanner" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="contentMani" Runat="Server">
-    <img src="images/thao-0001.jpg" alt="" width="850px" />
-    <img src="images/thao2-0001.jpg" alt="" width="850px"/>
-    <img src="images/thao1-0001.jpg" alt="" width="850px"/>
+    <img src="images/prices/thao-0001.jpg" alt="" width="850px" />
+    <img src="images/prices/thao2-0001.jpg" alt="" width="850px"/>
+    <img src="images/prices/thao1-0001.jpg" alt="" width="850px"/>
     
 </asp:Content>
 

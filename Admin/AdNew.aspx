@@ -20,5 +20,50 @@
             <!-- /Block_sub_menu -->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cntDetails" Runat="Server">
+      <!-- Pages_buttons -->
+    <div id="section-bar">
+        <span class="btn"><a href="EditNew.aspx?act=new" title="+ Add">+ Add</a></span>
+    </div>
+    <!-- /Pages_buttons -->
+
+    <div style="clear: both">
+        <asp:Label runat="server" ID="lblError" ForeColor="Red"></asp:Label>
+    </div>
+
+    <asp:GridView ID="GridView1" CssClass="admin-table" runat="server" AutoGenerateColumns="False" DataSourceID="LinqDataSource1" AllowPaging="True" AllowSorting="True">
+        <Columns>
+            <asp:TemplateField HeaderText="Id" SortExpression="Id">
+                <EditItemTemplate>
+                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
+                </ItemTemplate>
+                <ControlStyle CssClass="admin-table-titles admin-table-field" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Name" SortExpression="Name">
+                <EditItemTemplate>
+                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("Header") %>'></asp:Label>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Label2" runat="server" Text='<%# Bind("Header") %>'></asp:Label>
+                </ItemTemplate>
+                <ControlStyle CssClass="admin-table-titles admin-table-field" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="">
+
+                <ItemTemplate>
+                    <span class="btn-edit"><a href='EditNew.aspx?Id=<%# Eval("Id") %>&act=edit' title="Edit">Edit</a></span>
+                    <asp:LinkButton runat="server" OnClientClick="confirm('Bạn có chắt xóa tin này?')" OnCommand="lbtnDelete_Command" ID="lbtnDelete" CommandArgument='<%# Eval("Id") %>' Text="Delete" CssClass="btn-delete"></asp:LinkButton>
+                </ItemTemplate>
+                <ControlStyle CssClass="admin-table-titles admin-table-field" />
+            </asp:TemplateField>
+        </Columns>
+
+
+    </asp:GridView>
+    <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DataContentDataContext" EntityTypeName="" Select="new (Id, Header)" TableName="News">
+    </asp:LinqDataSource>
+
 </asp:Content>
 

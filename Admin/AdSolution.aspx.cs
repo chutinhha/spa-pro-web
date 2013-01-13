@@ -11,4 +11,18 @@ public partial class Admin_AdSolution : System.Web.UI.Page
     {
 
     }
+    protected void lbtnDelete_Command(object sender, CommandEventArgs e)
+    {
+        try
+        {
+            SolutionsModel model = new SolutionsModel();
+            model.ID = e.CommandArgument.ToString();
+            SolutionsViewModel.Delete(model);
+        }
+        catch (Exception)
+        {
+            lblError.Text = "Lỗi hệ thống!";
+        }
+
+    }
 }

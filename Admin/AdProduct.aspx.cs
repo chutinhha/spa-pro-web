@@ -11,4 +11,18 @@ public partial class Admin_AdProduct : System.Web.UI.Page
     {
 
     }
+    protected void lbtnDelete_Command(object sender, CommandEventArgs e)
+    {
+        try
+        {
+            ProductsModel model = new ProductsModel();
+            model.ID = e.CommandArgument.ToString();
+            ProductsViewModel.Delete(model);
+        }
+        catch (Exception)
+        {
+            lblError.Text = "Lỗi hệ thống! Liên hệ nhà quản trị";
+        }
+
+    }
 }
