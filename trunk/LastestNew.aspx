@@ -53,29 +53,28 @@
                                                                         </h3>
                                                                         <div class="wrapper">
                                                                             <img class="img-left1" src="images/4page_img1.jpg" alt="">
-                                                                            <strong>20.09.2010</strong><br>
-                                                                            <strong><a href="NewDetails.aspx">Agna. Sed laoreet</a></strong>
+                                                                           
+                                                                            <strong><a href="LastestNew.aspx?Id=1">Tin 2 Sao</a></strong>
                                                                             <p class="p1">
-                                                                                Ut tellus dolor, ds et, tum el cursus eleifde</p>
+                                                                                Sao lam dep</p>
                                                                         </div>
                                                                         <div class="wrapper">
                                                                             <img class="img-left1" src="images/4page_img2.jpg" alt="">
-                                                                            <strong>15.09.2010</strong><br>
-                                                                            <strong><a href="NewDetails.aspx">Us et, tum el cursu</a></strong>
+                                                                            
+                                                                            <strong><a href="LastestNew.aspx?Id=2">Teen viet</a></strong>
                                                                             <p class="p1">
-                                                                                Eleifendelteneanauct<br>
-                                                                                or wisi et quisque ulla</p>
+                                                                                phong cach teen</p>
                                                                         </div>
                                                                         <div class="wrapper">
                                                                             <img class="img-left1" src="images/4page_img3.jpg" alt="">
-                                                                            <strong>10.09.2010</strong><br>
-                                                                            <strong><a href="NewDetails.aspx">Agna. Sed laoreet</a></strong>
+                                                                            
+                                                                            <strong><a href="LastestNew.aspx?Id=3">Quy ba</a></strong>
                                                                             <p class="p1">
                                                                                 Ut tellus dolor, ds et, tum el cursus eleifde</p>
                                                                         </div>
                                                                         <div class="wrapper">
                                                                             <img class="img-left" src="images/4page_img4.jpg" alt="">
-                                                                            <strong>05.09.2010</strong><br>
+                                                                            
                                                                             <strong><a href="NewDetails.aspx">Us et, tum el cursu</a></strong>
                                                                             <p class="p1">
                                                                                 Eleifendelteneanauct<br>
@@ -108,39 +107,20 @@
                                                                     <div class="col-2">
                                                                         <h3>
                                                                         </h3>
+                                                                        <asp:ListView ID="lstViewNew" runat="server">
+                                                                            <ItemTemplate>
+                                                                                <div class="wrapper p1">
+                                                                                    <img class="img-left" src='<%# Eval("Link_Image_Small") %>' alt="">
+                                                                                    <strong><a href="NewDetails.aspx"><%# Eval("header")%> </a></strong>
+                                                                                    <p>
+                                                                                        <%# Eval("header")%>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </ItemTemplate>
+                                                                        </asp:ListView>
                                                                         <div class="wrapper p1">
                                                                             <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a> </strong>
-                                                                            <p>
-                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
-                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
-                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
-                                                                                những hoạt chất phục hồi da hiệu quả
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="wrapper p1">
-                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a> </strong>
-                                                                            <p>
-                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
-                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
-                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
-                                                                                những hoạt chất phục hồi da hiệu quả
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="wrapper p1">
-                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a> </strong>
-                                                                            <p>
-                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
-                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
-                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
-                                                                                những hoạt chất phục hồi da hiệu quả
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="wrapper p1">
-                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a> </strong>
+                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a></strong>
                                                                             <p>
                                                                                 Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
                                                                                 không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
@@ -158,9 +138,26 @@
                                                                                 những hoạt chất phục hồi da hiệu quả
                                                                             </p>
                                                                         </div>
-                                                                       
-                                                                        
-                                                                    
+                                                                        <div class="wrapper p1">
+                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
+                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a></strong>
+                                                                            <p>
+                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
+                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
+                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
+                                                                                những hoạt chất phục hồi da hiệu quả
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="wrapper p1">
+                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
+                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a></strong>
+                                                                            <p>
+                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
+                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
+                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
+                                                                                những hoạt chất phục hồi da hiệu quả
+                                                                            </p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>

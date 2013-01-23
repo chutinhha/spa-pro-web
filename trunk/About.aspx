@@ -50,7 +50,7 @@
                                                                 <div class="wrapper row-1">
                                                                     <div class="col-1">
                                                                         <h3>
-                                                                            A few words about us
+                                                                            Giới thiệu Spa
                                                                         </h3>
                                                                         <div class="wrapper">
                                                                             <img class="img-left" src="images/2page_img1.jpg" alt="">
@@ -77,7 +77,7 @@
                                                                     </div>
                                                                     <div class="col-2">
                                                                         <h3>
-                                                                            What we offer
+                                                                            Dịch vụ Spa
                                                                         </h3>
                                                                         <strong>Lorem ipsum dolor sit amet consect-<br>
                                                                             etuert adipiscing elit lorem. </strong>
@@ -103,8 +103,7 @@
                                                                 <div class="wrapper row-2">
                                                                     <div class="col-1">
                                                                         <h3>
-                                                                            Our capabilities
-                                                                        </h3>
+                                                                            Khả năng</h3>
                                                                         <p>
                                                                             <span class="it">Lorem ipsum dolor sit</span> amet consectetuer adipiscing elit
                                                                             raesent vestibulum olestie lacus tenean nonummy hendrerit mauris phasellus porta.
@@ -124,7 +123,7 @@
                                                                     </div>
                                                                     <div class="col-1">
                                                                         <h3>
-                                                                            Our advantages
+                                                                            Lợi thế
                                                                         </h3>
                                                                         <span class="color-1">Lorem ipsum dolor sitamet consectetuer</span>
                                                                         <p>
@@ -143,8 +142,7 @@
                                                                     </div>
                                                                     <div class="col-2">
                                                                         <h3>
-                                                                            Our principles
-                                                                        </h3>
+                                                                            Nguyên tắc hoạt động</h3>
                                                                         <p>
                                                                             <span class="it">Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit
                                                                             raesent vestibulum olestie lacus tenean nonummy hendrerit mauris phasellus porta.

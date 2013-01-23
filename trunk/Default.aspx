@@ -38,6 +38,13 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="contentMani" runat="Server">
+    <div>
+<p style="font-style:italic; text-align:justify; ">Phụ nữ luôn được xem là hiện thân của cái đẹp. Khi cuộc sống ngày càng được nâng cao, phụ nữ có điều kiện mở rộng các mối quan hệ trong xã hội, 
+nhu cầu làm đẹp là điều không thể thiếu. Vẻ đẹp về hình thức nói chung và vóc dàng làn da nói riêng 
+là một trong những tiêu chí quan trọng trong thang điểm đánh giá vẻ đẹp của một phụ nữ hiện đại.
+</p>
+</div>
+<div class="clr"></div>
     <div class="sub_indent">
         <div class="wrapper mar_bot">
             <div class="wrapper-box module-latest">
@@ -46,7 +53,7 @@
                         <div class="right-bg">
                             <div class="left-bg">
                                 <h3>
-                                    Lastest New
+                                    Tin Tức
                                 </h3>
                             </div>
                         </div>
@@ -92,7 +99,7 @@
                         <div class="right-bg">
                             <div class="left-bg">
                                 <h3>
-                                    <cufon style="width: 110px; height: 30px;" alt="Welcome" class="cufon cufon-canvas"><canvas style="width: 120px; height: 29px; top: 0px; left: -1px;" height="29" width="120"></canvas><cufontext>Welcome</cufontext></cufon>
+                                   Giới thiệu
                                 </h3>
                             </div>
                         </div>
@@ -128,7 +135,7 @@
                         <div class="right-bg">
                             <div class="left-bg">
                                 <h3>
-                                    <cufon style="width: 102px; height: 30px;" alt="Services" class="cufon cufon-canvas"><canvas style="width: 117px; height: 29px; top: 0px; left: -1px;" height="29" width="117"></canvas><cufontext>Services</cufontext></cufon>
+                                    Dịch vụ
                                 </h3>
                             </div>
                         </div>
