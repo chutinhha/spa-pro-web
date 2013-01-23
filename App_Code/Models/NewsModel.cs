@@ -14,9 +14,10 @@ public class NewsModel:BaseModel
 		// TODO: Add constructor logic here
 		//
 	}
-    public NewsModel(string id,string header, string contents, string author, Char? typeNew, string linkImageSmall, string linkImage, string poster, string postId, string creater, string createDate, string modifier, string modifyDate)
+    public NewsModel(string id,string header, string contents, string author, Char? typeNew, string linkImageSmall, string linkImage, string poster, string postId, string creater, string createDate, string modifier, string modifyDate, string title)
     {
         this.ID = id;
+        this.Title = title;
         this.Contents = contents;
         this.Author = author;
         this.Header = header;
@@ -30,6 +31,7 @@ public class NewsModel:BaseModel
         this.Modifier = modifier;
         this.ModifyDate = modifyDate;
     }
+    public string Title { get; set; }
     public string Header { get; set; }
     public string Contents { get; set; }
     public Char? Type_News { get; set; }
