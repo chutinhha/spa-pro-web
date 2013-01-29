@@ -98,12 +98,12 @@ public partial class Admin_AdNew : System.Web.UI.Page
         NewsViewModel.Update(model);
     }
 
-    public string UploadImage(FileUpload fileupload, string fill)
+    public static string UploadImage(System.Web.UI.WebControls.FileUpload fileupload, string fill)
     {
         try
         {
             string path = "~/images/products/" + DateTime.Now.ToString("yyyyMMddhhmmss") + fill + "." + fileupload.FileName;
-            fileupload.SaveAs(Server.MapPath(path));
+            fileupload.SaveAs(System.Web.HttpContext.Current.Server.MapPath(path));
             return path;
         }
         catch (Exception)
