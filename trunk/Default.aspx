@@ -39,10 +39,11 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="contentMani" runat="Server">
     <div>
-<p style="font-style:italic; text-align:justify; ">Phụ nữ luôn được xem là hiện thân của cái đẹp. Khi cuộc sống ngày càng được nâng cao, phụ nữ có điều kiện mở rộng các mối quan hệ trong xã hội, 
+<%--<p style="font-style:italic; text-align:justify; ">Phụ nữ luôn được xem là hiện thân của cái đẹp. Khi cuộc sống ngày càng được nâng cao, phụ nữ có điều kiện mở rộng các mối quan hệ trong xã hội, 
 nhu cầu làm đẹp là điều không thể thiếu. Vẻ đẹp về hình thức nói chung và vóc dàng làn da nói riêng 
 là một trong những tiêu chí quan trọng trong thang điểm đánh giá vẻ đẹp của một phụ nữ hiện đại.
-</p>
+</p>--%>
+<p style="font-style:italic; text-align:justify; "><%=strCompanyInfo %></p>
 </div>
 <div class="clr"></div>
     <div class="sub_indent">
@@ -198,7 +199,8 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                     </div>
                     <div class="clear">
                         <div class="boxIndent">
-                            <ul>
+                        <%=strTestimonials %>
+                            <%--<ul>
                                 <li>
                                     <div class="author">
                                         Donna Smith.
@@ -207,7 +209,7 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                                     <span class="theme"><a href="#">Praesent vestibulum olestie lacus.</a></span><br>
                                     Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum
                                     sociis natoque pena. </li>
-                            </ul>
+                            </ul>--%>
                         </div>
                     </div>
                 </div>
@@ -217,7 +219,8 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
             <h3>
                 We offer a huge selection of spa parts and spa accessories
             </h3>
-            <p>
+            <%=strAboutMyService %>
+            <%--<p>
                 <span class="it">Lorem ipsum dolor sit amet,</span>consectetuer adipiscing elit.
                 Praesent vestibulum olestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.
                 Fusce suscipit varius mi. Cum sociis
@@ -226,10 +229,8 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                 Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum
                 sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus museugiat
                 malesuada
-            </p>
-            <p>
-                <a class="readon" href="">more</a>
-            </p>
+            </p>--%>
+           
             <div id="content">
                 <div class="container">
                     <div class="clear">

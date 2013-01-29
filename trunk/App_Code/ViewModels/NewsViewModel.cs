@@ -105,7 +105,7 @@ public class NewsViewModel
                             select temp;
                 foreach (var i in items)
                 {
-                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
+                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate, "");
                     lst.Add(n);
                 }
             }
@@ -124,7 +124,7 @@ public class NewsViewModel
             using (DataContentDataContext dc = new DataContentDataContext())
             {
                 New i = dc.News.Where(a => a.Id == model.ID).SingleOrDefault();
-                return new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
+                return new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate, "");
             }
         }
         catch (Exception)
