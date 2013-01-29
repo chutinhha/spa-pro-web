@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="wed_Spa_Pro" Class="DataContentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=DAMTHOAI;Initial Catalog=wed_Spa_Pro;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="wed_Spa_ProConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=wed_Spa_Pro;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="wed_Spa_ProConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.User_Log" Member="User_Logs">
     <Type Name="User_Log">
       <Column Name="ID" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -87,6 +87,8 @@
       <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
       <Column Name="Modifier" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="ModifyDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="CatID" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
