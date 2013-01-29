@@ -168,7 +168,7 @@ public class NewsViewModel
             {
                 New i = dc.News.Where(a => a.Id == model.ID).SingleOrDefault();
                 return new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, 
-                    i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate,"");
+                    i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate,i.Title);
             }
         }
         catch (Exception)

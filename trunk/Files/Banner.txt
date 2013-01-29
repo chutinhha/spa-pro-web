@@ -1,0 +1,4 @@
+﻿<img style="display: none;" src="images/01.jpg" alt="" title="banner1" />
+<img src="images/02.jpg" alt="Banner2" title="Banner2" style="display: none;" />
+<img src="images/03.jpg" alt="Banner3" title="Banner3" style="display: none;" />
+<img src="images/04.jpg" alt="Banner4" title="Banner4" style="display: none;" />

@@ -139,7 +139,7 @@
                                                                                 <div class="wrapper p1">
                                                                                     <img class="img-left" src='<%# Eval("Link_Image_Small") %>' alt="">
                                                                                     <strong>
-                                                                                        <a href="NewDetails.aspx"><%# Eval("header")%> 
+                                                                                        <a href="NewDetails.aspx?id=<%#Eval("ID") %>"><%# Eval("header")%> 
                                                                                         </a>
                                                                                     </strong>
                                                                                     <p>
