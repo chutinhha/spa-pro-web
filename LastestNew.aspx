@@ -52,33 +52,60 @@
                                                                             Tin tức
                                                                         </h3>
                                                                         <div class="wrapper">
-                                                                            <img class="img-left1" src="images/4page_img1.jpg" alt="">
+                                                                            <img class="img-left1" src="images/4page_img2.jpg" alt="">
                                                                            
-                                                                            <strong><a href="LastestNew.aspx?Id=1">Tin 2 Sao</a></strong>
+                                                                            <strong><a href="LastestNew.aspx?Id=1">Sức khỏe</a></strong>
                                                                             <p class="p1">
-                                                                                Sao lam dep</p>
+                                                                                Sức khỏe cho cuộc sống hiện đại...</p>
                                                                         </div>
                                                                         <div class="wrapper">
                                                                             <img class="img-left1" src="images/4page_img2.jpg" alt="">
                                                                             
-                                                                            <strong><a href="LastestNew.aspx?Id=2">Teen viet</a></strong>
+                                                                            <strong><a href="LastestNew.aspx?Id=2">Chăm sóc da</a></strong>
                                                                             <p class="p1">
-                                                                                phong cach teen</p>
+                                                                                Kiến thức cho một làn da trẻ khỏe</p>
                                                                         </div>
                                                                         <div class="wrapper">
                                                                             <img class="img-left1" src="images/4page_img3.jpg" alt="">
                                                                             
-                                                                            <strong><a href="LastestNew.aspx?Id=3">Quy ba</a></strong>
+                                                                            <strong><a href="LastestNew.aspx?Id=3">Quý bà</a></strong>
                                                                             <p class="p1">
-                                                                                Ut tellus dolor, ds et, tum el cursus eleifde</p>
+                                                                                Phụ nữ thời hiện đại</p>
                                                                         </div>
                                                                         <div class="wrapper">
                                                                             <img class="img-left" src="images/4page_img4.jpg" alt="">
                                                                             
-                                                                            <strong><a href="NewDetails.aspx">Us et, tum el cursu</a></strong>
+                                                                            <strong><a href="NewDetails.aspx?Id=4">Quý ông</a></strong>
                                                                             <p class="p1">
-                                                                                Eleifendelteneanauct<br>
-                                                                                or wisi et quisque ulla</p>
+                                                                                Góc đàn ông</p>
+                                                                        </div>
+                                                                                                                                                <div class="wrapper">
+                                                                            <img class="img-left" src="images/4page_img4.jpg" alt="">
+                                                                            
+                                                                            <strong><a href="NewDetails.aspx?Id=5">Thực phẩm</a></strong>
+                                                                            <p class="p1">
+                                                                                Ăn gì cho cuộc sống hằng ngày</p>
+                                                                        </div>
+                                                                                                                                                <div class="wrapper">
+                                                                            <img class="img-left" src="images/4page_img4.jpg" alt="">
+                                                                            
+                                                                            <strong><a href="NewDetails.aspx?Id=6">Làm đẹp</a></strong>
+                                                                            <p class="p1">
+                                                                                Người phụ nữ đẹp</p>
+                                                                        </div>
+                                                                                                                                                <div class="wrapper">
+                                                                            <img class="img-left" src="images/4page_img4.jpg" alt="">
+                                                                            
+                                                                            <strong><a href="NewDetails.aspx?Id=7">Bí Quyết mặc đẹp</a></strong>
+                                                                            <p class="p1">
+                                                                                Thế nào là hợp thời trang</p>
+                                                                        </div>
+                                                                                                                                                <div class="wrapper">
+                                                                            <img class="img-left" src="images/4page_img4.jpg" alt="">
+                                                                            
+                                                                            <strong><a href="NewDetails.aspx?Id=8">Trang điểm</a></strong>
+                                                                            <p class="p1">
+                                                                                Kinh nghiệm trang điểm</p>
                                                                         </div>
                                                                     </div>
                                                                     <%--<div class="col-1">
@@ -111,53 +138,17 @@
                                                                             <ItemTemplate>
                                                                                 <div class="wrapper p1">
                                                                                     <img class="img-left" src='<%# Eval("Link_Image_Small") %>' alt="">
-                                                                                    <strong><a href="NewDetails.aspx"><%# Eval("header")%> </a></strong>
+                                                                                    <strong>
+                                                                                        <a href="NewDetails.aspx"><%# Eval("header")%> 
+                                                                                        </a>
+                                                                                    </strong>
                                                                                     <p>
-                                                                                        <%# Eval("header")%>
+                                                                                        <%# Eval("Contents")%>
                                                                                     </p>
                                                                                 </div>
                                                                             </ItemTemplate>
                                                                         </asp:ListView>
-                                                                        <div class="wrapper p1">
-                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a></strong>
-                                                                            <p>
-                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
-                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
-                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
-                                                                                những hoạt chất phục hồi da hiệu quả
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="wrapper p1">
-                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a></strong>
-                                                                            <p>
-                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
-                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
-                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
-                                                                                những hoạt chất phục hồi da hiệu quả
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="wrapper p1">
-                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a></strong>
-                                                                            <p>
-                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
-                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
-                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
-                                                                                những hoạt chất phục hồi da hiệu quả
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="wrapper p1">
-                                                                            <img class="img-left" src="images/3page_img1.jpg" alt="">
-                                                                            <strong><a href="NewDetails.aspx">Ligne Soin O2ptimal . </a></strong>
-                                                                            <p>
-                                                                                Da của bạn có triệu chứng suy nhược, giảm sức sống và bắt đầu xỉn màu không? Nếu
-                                                                                không do mệt mỏi, căng thẳng vì công việc hằng ngày, hoặc do lối sống, thì do tác
-                                                                                hại của ánh nắng. Hãy khám phá bộ sưu tập độc đáo có khả năng thẩm thấu vào da với
-                                                                                những hoạt chất phục hồi da hiệu quả
-                                                                            </p>
-                                                                        </div>
+
                                                                     </div>
                                                                 </div>
                                                             </div>
