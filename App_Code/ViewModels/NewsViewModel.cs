@@ -94,18 +94,30 @@ public class NewsViewModel
         }
     }
 
-    public static List<NewsModel> SelectAll()
+    /// <summary>
+    /// Get News base on CatID
+    /// </summary>
+    /// <param name="CatID"></param>
+    /// <returns></returns>
+    public static List<NewsModel> SelectAll(string CatID)
     {
         List<NewsModel> lst = new List<NewsModel>();
         try
         {
             using (DataContentDataContext dc = new DataContentDataContext())
             {
+                
                 var items = from temp in dc.News
+                            where temp.CatID==CatID
                             select temp;
+
+
+
                 foreach (var i in items)
                 {
-                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate, "");
+                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, 
+                        i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate,
+                        i.Modifier, i.ModifyDate,"");
                     lst.Add(n);
                 }
             }
@@ -117,6 +129,37 @@ public class NewsViewModel
 
         }
     }
+
+    public static List<NewsModel> SelectAll()
+    {
+        List<NewsModel> lst = new List<NewsModel>();
+        try
+        {
+            using (DataContentDataContext dc = new DataContentDataContext())
+            {
+                
+                var items = from temp in dc.News
+                            select temp;
+
+
+
+                foreach (var i in items)
+                {
+                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, 
+                        i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate,
+                        i.Modifier, i.ModifyDate,"");
+                    lst.Add(n);
+                }
+            }
+            return lst;
+        }
+        catch (Exception)
+        {
+            return lst;
+
+        }
+    }
+
     public static NewsModel SelectOne(NewsModel model)
     {
         try
@@ -124,7 +167,8 @@ public class NewsViewModel
             using (DataContentDataContext dc = new DataContentDataContext())
             {
                 New i = dc.News.Where(a => a.Id == model.ID).SingleOrDefault();
-                return new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate, "");
+                return new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, 
+                    i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate,"");
             }
         }
         catch (Exception)
