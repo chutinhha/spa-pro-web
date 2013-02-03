@@ -71,3 +71,26 @@ a.nivo-nextNav {
 a.nivo-prevNav {
 	left:10px;
 }
+
+.fixed-function .feedback {
+    background-position: -210px -625px;
+   
+    bottom: 40px;
+    padding: 10px 10px 10px;
+    position: fixed;
+    text-transform: uppercase;
+    margin:0;
+    color:White;
+}
+
+
+.fixed-function .feedback {
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 5px 0 0 5px;
+    bottom: 108px;
+    display: block;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    z-index: 99999;
+}
