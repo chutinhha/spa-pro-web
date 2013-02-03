@@ -1,10 +1,6 @@
-﻿<p>
-<span class="it">Lorem ipsum dolor sit amet,</span>consectetuer adipiscing elit.
-Praesent vestibulum olestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.
-Fusce suscipit varius mi. Cum sociis
-</p>
 <p>
-Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus museugiat
-malesuada
-</p>
+	skdhfkjshfkjsdf</p>
+<p>
+	sdjfhskdjfhkjsdf</p>
+<p>
+	sdfjhsdkjfhkjsdhfksd</p>

@@ -2,6 +2,8 @@
     CodeFile="ContactUs.aspx.cs" Inherits="ContactUs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentMenu" runat="Server">
     <ul class="menu sf-menu sf-horizontal sf-js-enabled sf-shadow">
@@ -33,15 +35,13 @@
         <div class="clear">
             <!--right-->
             <div id="right">
-                <div class="wrapper-box module-login">
+                <%--<div class="wrapper-box module-login">
                     <div class="boxTitle">
                         <div class="title">
                             <div class="right-bg">
                                 <div class="left-bg">
                                     <h3>
-                                        <cufon class="cufon cufon-canvas" alt="Login " style="width: 77px; height: 30px;"><canvas width="94" height="29" style="width: 94px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Login </cufontext></cufon>
-                                        <cufon class="cufon cufon-canvas" alt="Form" style="width: 57px; height: 30px;"><canvas width="64" height="29" style="width: 64px; height: 29px; top: 0px; left: -1px;"></canvas><cufontext>Form</cufontext></cufon>
-                                    </h3>
+                                        Login form</h3>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="wrapper-box module">
                     <div class="boxTitle">
                         <div class="title">
@@ -102,8 +102,8 @@
                     </div>
                     <div class="clear">
                         <div class="boxIndent">
-                            We have<br>
-                            <span class="count">1 guest&nbsp;</span>online
+                            Chúng tôi có<br/>
+                            <span class="count">1 thành viên&nbsp;</span>online
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,10 @@
                                         </tr>
                                         <tr>
                                             <td colspan="2">
-                                                <div class="form-validate" id="emailForm" name="emailForm">
+
+                                             <div id="map_canvas" style="width:100%; height:100%"></div>
+
+                                                <%--<div class="form-validate" id="emailForm" name="emailForm">
                                                     <div class="contact_email">
                                                         <div class="clear">
                                                             <div class="fleft">
@@ -235,7 +238,7 @@
                                                     <input type="hidden" value="2" name="id">
                                                     <input type="hidden" value="submit" name="task">
                                                     <input type="hidden" value="1" name="e247b0c34326b18cabbb02941cbc0088">
-                                                </div>
+                                                </div>--%>
                                                 <br>
                                             </td>
                                         </tr>

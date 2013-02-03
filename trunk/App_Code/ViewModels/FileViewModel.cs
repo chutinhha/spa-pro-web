@@ -41,11 +41,11 @@ public class FileViewModel
         }
     }
 
-    public static void SaveFile(string content, string fileName)
+    public static void SaveFile(string fileName, string content)
     {
         try
         {
-            string path = System.Web.HttpContext.Current.Server.MapPath(fileName);
+            string path = System.Web.HttpContext.Current.Server.MapPath("~/Files/" + fileName);
             System.IO.File.WriteAllText(path, content);
         }
         catch (Exception)
