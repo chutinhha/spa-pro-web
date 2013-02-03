@@ -93,8 +93,7 @@
                         <div class="title">
                             <div class="right-bg">
                                 <div class="left-bg">
-                                    <h3>Who's
-                 Online
+                                    <h3>Thành viên online
                                     </h3>
                                 </div>
                             </div>
@@ -128,10 +127,7 @@
                                                                         <tr>
                                                                             <td>
                                                                                 <div class="department">
-                                                                                    <br>
-                                                                                    <h3>Our Departments
-                                                                                    </h3>
-                                                                                    <br>
+                                                                                    
                                                                                     <div class="wrapper">
                                                                                         <br>
                                                                                         <img alt="alt" src="images/7page_img2.jpg" class="img-left"><br>
