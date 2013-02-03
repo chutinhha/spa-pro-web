@@ -2,6 +2,39 @@
     CodeFile="ContactUs.aspx.cs" Inherits="ContactUs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript">
+
+        function initialize() {
+            //alert(12345);
+            var mapOptions = {
+                center: new google.maps.LatLng(-34.397, 150.644),
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+            var marker = new google.maps.Marker
+    (
+        {
+            position: new google.maps.LatLng(-34.397, 150.644),
+            map: map,
+            title: 'Click me'
+        }
+    );
+            var infowindow = new google.maps.InfoWindow({
+                content: 'Location info:<br/>Country Name:<br/>LatLng:'
+            });
+            google.maps.event.addListener(marker, 'click', function () {
+                // Calling the open method of the infoWindow 
+                infowindow.open(map, marker);
+            });
+        }
+        //        google.maps.event.addDomListener(window, 'load', initialize);
+
+        window.onload = initialize;
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentMenu" runat="Server">
     <ul class="menu sf-menu sf-horizontal sf-js-enabled sf-shadow">
@@ -100,7 +133,9 @@
                     <div class="clear">
                         <div class="boxIndent">
                             Chúng tôi có<br />
-                            <span class="count"><%=userOnline%> thành viên&nbsp;</span>online
+                            <span class="count">
+                                <%=userOnline%>
+                                thành viên&nbsp;</span>online
                         </div>
                     </div>
                 </div>
@@ -179,63 +214,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2">
+                                            <td colspan="2" style="height: 300px;">
                                                 <div id="map_canvas" style="width: 100%; height: 100%">
                                                 </div>
-                                                <%--<div class="form-validate" id="emailForm" name="emailForm">
-                                                    <div class="contact_email">
-                                                        <div class="clear">
-                                                            <div class="fleft">
-                                                                <label for="contact_name">
-                                                                    &nbsp;Enter your Name:
-                                                                </label>
-                                                                <br>
-                                                                <div class="contact_input">
-                                                                    <input type="text" value="" class="inputbox" size="30" id="contact_name" name="name">
-                                                                </div>
-                                                                <label for="contact_email" id="contact_emailmsg">
-                                                                    &nbsp;E-mail address:
-                                                                </label>
-                                                                <br>
-                                                                <div class="contact_input">
-                                                                    <input type="text" class="inputbox required validate-email" value="" size="30" name="email"
-                                                                        id="contact_email">
-                                                                </div>
-                                                                <label for="contact_subject">
-                                                                    &nbsp;Message Subject:
-                                                                </label>
-                                                                <br>
-                                                                <div class="contact_input">
-                                                                    <input type="text" value="" class="inputbox" size="30" id="contact_subject" name="subject">
-                                                                </div>
-                                                            </div>
-                                                            <div class="fleft">
-                                                                <label for="contact_text" id="contact_textmsg">
-                                                                    &nbsp;Enter your Message:
-                                                                </label>
-                                                                <br>
-                                                                <div class="contact_area">
-                                                                    <textarea class="inputbox required" id="contact_text" name="text" rows="10" cols="50"></textarea>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <input type="checkbox" value="1" id="contact_email_copy" name="email_copy">
-                                                        <label for="contact_email_copy" id="contact_email_copy_lb">
-                                                            E-mail a copy of this message to your own address.
-                                                        </label>
-                                                        <br>
-                                                        <br>
-                                                        <button type="submit" class="button validate png">
-                                                            Send</button>
-                                                    </div>
-                                                    <input type="hidden" value="com_contact" name="option">
-                                                    <input type="hidden" value="contact" name="view">
-                                                    <input type="hidden" value="2" name="id">
-                                                    <input type="hidden" value="submit" name="task">
-                                                    <input type="hidden" value="1" name="e247b0c34326b18cabbb02941cbc0088">
-                                                </div>--%>
-                                                <br>
                                             </td>
                                         </tr>
                                     </tbody>
