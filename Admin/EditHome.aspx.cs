@@ -47,7 +47,8 @@ public partial class Admin_EditHome : System.Web.UI.Page
     {
         SaveImage();
         SaveCompanyInfo();
-        SaveTestimonials();
+        SaveTestimonials(); 
+        SaveAboutMyService();
         BindImage();
 
     }

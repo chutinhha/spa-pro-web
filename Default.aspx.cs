@@ -15,6 +15,8 @@ public partial class _Default : System.Web.UI.Page
         if (!IsPostBack)
         {
             BindCompanyInfo();
+            BindTestimonials();
+            BindAboutMyService();
         }
     }
     public void BindCompanyInfo()

@@ -52,7 +52,8 @@
                                                                         <h3>
                                                                             Giới thiệu Spa
                                                                         </h3>
-                                                                        <div class="wrapper">
+                                                                        <%=strGioiThieuSpa %>
+                                                                        <%--<div class="wrapper">
                                                                             <img class="img-left" src="images/2page_img1.jpg" alt="">
                                                                             <strong>Lorem ipsum dolor sit amet, consectetuert adipiscing elit lorem dolor. </strong>
                                                                             <p>
@@ -73,13 +74,14 @@
                                                                                 Svoluptatem accusantium doloremque laudan-<br>
                                                                                 tium totam rem aperiam eaque ipsa quae abm illo inventore veritatis quasin architecto
                                                                                 beatae vitae dicta sunt explicaboemo.</p>
-                                                                        </div>
+                                                                        </div>--%>
                                                                     </div>
                                                                     <div class="col-2">
                                                                         <h3>
                                                                             Dịch vụ Spa
                                                                         </h3>
-                                                                        <strong>Lorem ipsum dolor sit amet consect-<br>
+                                                                        <%=strDichVuSpa %>
+                                                                       <%-- <strong>Lorem ipsum dolor sit amet consect-<br>
                                                                             etuert adipiscing elit lorem. </strong>
                                                                         <p>
                                                                             Sedut perspiciatis unde omnis istnatus error sivoluptatem accusantium doloren laudantium
@@ -95,7 +97,7 @@
                                                                         </div>
                                                                         <p>
                                                                             Sedut perspiciatis unde omnis istnatus error sivoluptatem accusantium doloren laudantium
-                                                                            totam rem aperiam eaquem.</p>
+                                                                            totam rem aperiam eaquem.</p>--%>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -105,7 +107,8 @@
                                                                         <h3>
                                                                             Khả năng</h3>
                                                                         <p>
-                                                                            <span class="it">Lorem ipsum dolor sit</span> amet consectetuer adipiscing elit
+                                                                        <%=strKhaNang %>
+                                                                           <%-- <span class="it">Lorem ipsum dolor sit</span> amet consectetuer adipiscing elit
                                                                             raesent vestibulum olestie lacus tenean nonummy hendrerit mauris phasellus porta.
                                                                             Fusce suscipit variusen mi. Cum sociis natoque.</p>
                                                                         <div class="p1">
@@ -119,13 +122,14 @@
                                                                         </div>
                                                                         <p>
                                                                             Adipiscing elit raesent vestibulum olestie lacus tenean nonummy hendrerit mauris
-                                                                            phasellus porta. Fusce suscipit variusen mi. Cum sociis natoque elit raesent.</p>
+                                                                            phasellus porta. Fusce suscipit variusen mi. Cum sociis natoque elit raesent.</p>--%>
                                                                     </div>
                                                                     <div class="col-1">
                                                                         <h3>
                                                                             Lợi thế
                                                                         </h3>
-                                                                        <span class="color-1">Lorem ipsum dolor sitamet consectetuer</span>
+                                                                        <%=strLoiThe %>
+                                                                       <%-- <span class="color-1">Lorem ipsum dolor sitamet consectetuer</span>
                                                                         <p>
                                                                             adipiscing elit raesent vestibulum olestie lacus tenean nonummy hendrerit mauris
                                                                             phasellus porta. Fusce suscipit variusen mi. Cum sociis natoque.</p>
@@ -138,13 +142,14 @@
                                                                         <p>
                                                                             sit amet eros. Lorem ipsum dolor siamet consectetuer adipiscing elit. Mauriseme
                                                                             fermentum dictum magna. Sed laoreetm aliquam leo. Ut tellus dolor fermentum dictum
-                                                                            magnai ste natuse error.</p>
+                                                                            magnai ste natuse error.</p>--%>
                                                                     </div>
                                                                     <div class="col-2">
                                                                         <h3>
                                                                             Nguyên tắc hoạt động</h3>
                                                                         <p>
-                                                                            <span class="it">Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit
+                                                                        <%=strNguyenTacHoatDong %>
+                                                                           <%-- <span class="it">Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit
                                                                             raesent vestibulum olestie lacus tenean nonummy hendrerit mauris phasellus porta.
                                                                             Fusce suscip.</p>
                                                                         <div class="p1">
@@ -163,7 +168,7 @@
                                                                                 <li><a href="#">Hendrerit mauris phasellus porta </a></li>
                                                                                 <li><a href="#">Fusce suscipit varius mi cum</a></li>
                                                                             </ul>
-                                                                        </div>
+                                                                        </div>--%>
                                                                     </div>
                                                                 </div>
                                                             </div>

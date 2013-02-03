@@ -1,0 +1,15 @@
+<div class="wrapper">
+	<img alt="" class="img-left" src="images/2page_img1.jpg" /> <strong>Lorem ipsum dolor sit amet, consectetuert adipiscing elit lorem dolor. </strong>
+	<p>
+		Sedut perspiciatis unde omnis iste natus error sivoluptatem accusantium doloremque laudan-<br />
+		tium totam rem aperiam eaque ipsa quae abm illo inventore veritatis et quasin.</p>
+</div>
+<p>
+	Lorem ipsum dolor siti amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius miem Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida.</p>
+<div class="wrapper">
+	<img alt="" class="img-left" src="images/2page_img2.jpg" /> <strong>Sed ut perspiciatis unde omnis iste natuse error sit voluptatem accusantium. </strong>
+	<p>
+		demo</p>
+</div>
+<p>
+	&nbsp;</p>

@@ -1,10 +1,8 @@
-﻿<ul>
-<li>
-<div class="author">
-    Donna Smith.
-</div>
-<br />
-<span class="theme"><a href="#">Praesent vestibulum olestie lacus.</a></span><br>
-Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum
-sociis natoque pena. </li>
+<ul>
+	<li>
+		<div class="author">
+			Donna Smith.</div>
+		<br />
+		<span class="theme"><a href="#">Praesent vestibulum olestie lacus.</a></span><br />
+		Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque pena.</li>
 </ul>
