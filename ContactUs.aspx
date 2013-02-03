@@ -2,8 +2,6 @@
     CodeFile="ContactUs.aspx.cs" Inherits="ContactUs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-
-    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentMenu" runat="Server">
     <ul class="menu sf-menu sf-horizontal sf-js-enabled sf-shadow">
@@ -16,7 +14,6 @@
             <asp:Literal ID="Literal3" runat="server" Text=' <%$ Resources:lang, strOurProduct %>' /></span></a></li>
         <li class="item55 "><a href="Prices.aspx"><span>
             <asp:Literal ID="Literal8" runat="server" Text=' <%$ Resources:lang, strPrice %>' /></span></a>
-
         </li>
         <li class="item470 "><a href="Service.aspx"><span>
             <asp:Literal ID="Literal4" runat="server" Text="<%$ Resources:lang, strService %>" /></span></a></li>
@@ -93,7 +90,8 @@
                         <div class="title">
                             <div class="right-bg">
                                 <div class="left-bg">
-                                    <h3>Thành viên online
+                                    <h3>
+                                        Thành viên online
                                     </h3>
                                 </div>
                             </div>
@@ -101,8 +99,8 @@
                     </div>
                     <div class="clear">
                         <div class="boxIndent">
-                            Chúng tôi có<br/>
-                            <span class="count">1 thành viên&nbsp;</span>online
+                            Chúng tôi có<br />
+                            <span class="count"><%=userOnline%> thành viên&nbsp;</span>online
                         </div>
                     </div>
                 </div>
@@ -127,7 +125,6 @@
                                                                         <tr>
                                                                             <td>
                                                                                 <div class="department">
-                                                                                    
                                                                                     <div class="wrapper">
                                                                                         <br>
                                                                                         <img alt="alt" src="images/7page_img2.jpg" class="img-left"><br>
@@ -141,7 +138,8 @@
                                                                                             <dd>
                                                                                                 <span>FAX:</span> +1 101 889 9898</dd>
                                                                                             <br>
-                                                                                            <dd>E-mail: <a href="#">customers@demolink.org</a></dd>
+                                                                                            <dd>
+                                                                                                E-mail: <a href="#">customers@demolink.org</a></dd>
                                                                                             <br>
                                                                                         </dl>
                                                                                         <br>
@@ -154,7 +152,8 @@
                                                                                             <dd>
                                                                                                 <span>FAX:</span> +1 101 889 9898</dd>
                                                                                             <br>
-                                                                                            <dd>E-mail: <a href="#">planning@demolink.org</a></dd>
+                                                                                            <dd>
+                                                                                                E-mail: <a href="#">planning@demolink.org</a></dd>
                                                                                             <br>
                                                                                         </dl>
                                                                                         <br>
@@ -171,17 +170,18 @@
                                                     </tbody>
                                                 </table>
                                             </td>
-                                            <td>&nbsp;
+                                            <td>
+                                                &nbsp;
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td></td>
+                                            <td>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">
-
-                                             <div id="map_canvas" style="width:100%; height:100%"></div>
-
+                                                <div id="map_canvas" style="width: 100%; height: 100%">
+                                                </div>
                                                 <%--<div class="form-validate" id="emailForm" name="emailForm">
                                                     <div class="contact_email">
                                                         <div class="clear">
