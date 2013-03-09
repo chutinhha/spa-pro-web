@@ -32,20 +32,16 @@
      <asp:GridView ID="GridView1" CssClass="admin-table" runat="server" AutoGenerateColumns="False" DataSourceID="LinqDataSource1" AllowPaging="True" AllowSorting="True">
          <Columns>
              <asp:TemplateField HeaderText="Id" SortExpression="Id">
-                 <EditItemTemplate>
-                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
-                 </EditItemTemplate>
+                 
                  <ItemTemplate>
-                     <asp:Label ID="Label1" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
+                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
                  </ItemTemplate>
                  <ControlStyle CssClass="admin-table-titles admin-table-field" />
              </asp:TemplateField>
              <asp:TemplateField HeaderText="Name" SortExpression="Name">
-                 <EditItemTemplate>
-                     <asp:Label ID="Label2" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
-                 </EditItemTemplate>
+                
                  <ItemTemplate>
-                     <asp:Label ID="Label2" runat="server" Text='<%# Bind("Name") %>'></asp:Label>
+                     <asp:Label ID="Label2" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
                  </ItemTemplate>
                  <ControlStyle CssClass="admin-table-titles admin-table-field" />
              </asp:TemplateField>

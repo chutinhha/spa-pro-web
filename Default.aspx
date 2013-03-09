@@ -2,6 +2,153 @@
     CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <script type="text/javascript">
+        $j(function () {
+            $j('ul.spy').simpleSpy();
+            $j('ul.spy1').simpleSpy1();
+            $j('ul.spy2').simpleSpy2();
+        });
+        (function ($) {
+            $j.fn.simpleSpy = function (limit, interval) {
+                limit = limit || 4;
+                interval = interval || 4000;
+                return this.each(function () {
+                    // 1. setup
+                    // capture a cache of all the list items
+                    // chomp the list down to limit li elements
+                    var $list = $j(this),
+                    items = [], // uninitialised
+                    currentItem = limit,
+                    total = 0, // initialise later on
+                    height = $list.find('> li:first').height();
+                    // capture the cache
+                    $list.find('> li').each(function () {
+                        items.push('<li>' + $(this).html() + '</li>');
+                    });
+                    total = items.length;
+                    $list.wrap('<div class="spyWrapper" />').parent().css({ height: height * limit });
+                    $list.find('> li').filter(':gt(' + (limit - 1) + ')').remove();
+                    // 2. effect
+                    function spy() {
+                        // insert a new item with opacity and height of zero
+                        var $insert = $(items[currentItem]).css({
+                            height: 0,
+                            opacity: 0,
+                            display: 'none'
+                        }).prependTo($list);
+                        // fade the LAST item out
+                        $list.find('> li:last').animate({ opacity: 0 }, 1000, function () {
+                            // increase the height of the NEW first item
+                            $insert.animate({ height: height }, 1000).animate({ opacity: 1 }, 1000);
+                            // AND at the same time - decrease the height of the LAST item
+                            // $(this).animate({ height : 0 }, 1000, function () {
+                            // finally fade the first item in (and we can remove the last)
+                            $(this).remove();
+                            // });
+                        });
+                        currentItem++;
+                        if (currentItem >= total) {
+                            currentItem = 0;
+                        }
+                        setTimeout(spy, interval)
+                    }
+                    spy();
+                });
+            };
+            $j.fn.simpleSpy1 = function (limit, interval) {
+                limit = limit || 4;
+                interval = interval || 4500;
+                return this.each(function () {
+                    // 1. setup
+                    // capture a cache of all the list items
+                    // chomp the list down to limit li elements
+                    var $list = $j(this),
+                    items = [], // uninitialised
+                    currentItem = limit,
+                    total = 0, // initialise later on
+                    height = $list.find('> li:first').height();
+                    // capture the cache
+                    $list.find('> li').each(function () {
+                        items.push('<li>' + $(this).html() + '</li>');
+                    });
+                    total = items.length;
+                    $list.wrap('<div class="spyWrapper" />').parent().css({ height: height * limit });
+                    $list.find('> li').filter(':gt(' + (limit - 1) + ')').remove();
+                    // 2. effect
+                    function spy() {
+                        // insert a new item with opacity and height of zero
+                        var $insert = $(items[currentItem]).css({
+                            height: 0,
+                            opacity: 0,
+                            display: 'none'
+                        }).prependTo($list);
+                        // fade the LAST item out
+                        $list.find('> li:last').animate({ opacity: 0 }, 1000, function () {
+                            // increase the height of the NEW first item
+                            $insert.animate({ height: height }, 1000).animate({ opacity: 1 }, 1000);
+                            // AND at the same time - decrease the height of the LAST item
+                            // $(this).animate({ height : 0 }, 1000, function () {
+                            // finally fade the first item in (and we can remove the last)
+                            $(this).remove();
+                            // });
+                        });
+                        currentItem++;
+                        if (currentItem >= total) {
+                            currentItem = 0;
+                        }
+                        setTimeout(spy, interval)
+                    }
+                    spy();
+                });
+            };
+            $j.fn.simpleSpy2 = function (limit, interval) {
+                limit = limit || 4;
+                interval = interval || 3500;
+                return this.each(function () {
+                    // 1. setup
+                    // capture a cache of all the list items
+                    // chomp the list down to limit li elements
+                    var $list = $j(this),
+                    items = [], // uninitialised
+                    currentItem = limit,
+                    total = 0, // initialise later on
+                    height = $list.find('> li:first').height();
+                    // capture the cache
+                    $list.find('> li').each(function () {
+                        items.push('<li>' + $(this).html() + '</li>');
+                    });
+                    total = items.length;
+                    $list.wrap('<div class="spyWrapper" />').parent().css({ height: height * limit });
+                    $list.find('> li').filter(':gt(' + (limit - 1) + ')').remove();
+                    // 2. effect
+                    function spy() {
+                        // insert a new item with opacity and height of zero
+                        var $insert = $(items[currentItem]).css({
+                            height: 0,
+                            opacity: 0,
+                            display: 'none'
+                        }).prependTo($list);
+                        // fade the LAST item out
+                        $list.find('> li:last').animate({ opacity: 0 }, 1000, function () {
+                            // increase the height of the NEW first item
+                            $insert.animate({ height: height }, 1000).animate({ opacity: 1 }, 1000);
+                            // AND at the same time - decrease the height of the LAST item
+                            // $(this).animate({ height : 0 }, 1000, function () {
+                            // finally fade the first item in (and we can remove the last)
+                            $(this).remove();
+                            // });
+                        });
+                        currentItem++;
+                        if (currentItem >= total) {
+                            currentItem = 0;
+                        }
+                        setTimeout(spy, interval)
+                    }
+                    spy();
+                });
+            };
+        })(jQuery);
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentMenu" runat="Server">
     <ul class="menu sf-menu sf-horizontal sf-js-enabled sf-shadow">
@@ -39,13 +186,13 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="contentMani" runat="Server">
     <div>
-<%--<p style="font-style:italic; text-align:justify; ">Phụ nữ luôn được xem là hiện thân của cái đẹp. Khi cuộc sống ngày càng được nâng cao, phụ nữ có điều kiện mở rộng các mối quan hệ trong xã hội, 
+        <%--<p style="font-style:italic; text-align:justify; ">Phụ nữ luôn được xem là hiện thân của cái đẹp. Khi cuộc sống ngày càng được nâng cao, phụ nữ có điều kiện mở rộng các mối quan hệ trong xã hội, 
 nhu cầu làm đẹp là điều không thể thiếu. Vẻ đẹp về hình thức nói chung và vóc dàng làn da nói riêng 
 là một trong những tiêu chí quan trọng trong thang điểm đánh giá vẻ đẹp của một phụ nữ hiện đại.
 </p>--%>
-<p style="font-style:italic; text-align:justify; "><%=strCompanyInfo %></p>
-</div>
-<div class="clr"></div>
+        <p style="font-style: italic; text-align: justify;"><%=strCompanyInfo %></p>
+    </div>
+    <div class="clr"></div>
     <div class="sub_indent">
         <div class="wrapper mar_bot">
             <div class="wrapper-box module-latest">
@@ -53,8 +200,7 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                     <div class="title">
                         <div class="right-bg">
                             <div class="left-bg">
-                                <h3>
-                                    Tin Tức
+                                <h3>Tin Tức
                                 </h3>
                             </div>
                         </div>
@@ -63,44 +209,41 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                 <div class="clear">
                     <div class="boxIndent">
                         <div style="float: left; width: 100%;">
-                            <div class="globalnews" style="margin: 0">
-                                <div class="gn_static_1">
-                                    <center>
-                                        <a href="#">
-                                            <img src="images/1page_img2.jpg" alt="Image" style="float: left; margin: 0; border: 0;
-                                                padding-right: 5px;"></a></center>
-                                    <span class="title">12.03.2011
-                                        <br>
-                                        <a href="#">Agna. Sed laoreet</a></span>
-                                    <br>
-                                    Ut tellus dolor, ds et, tum el cursus eleifde
-                                </div>
-                                <div class="gn_static_1">
-                                    <center>
-                                        <a href="">
-                                            <img src="images/1page_img3.jpg" alt="Image" style="float: left; margin: 0; border: 0;
-                                                padding-right: 5px;"></a></center>
-                                    <span class="title">10.03.2011
-                                        <br>
-                                        <a href="">Us et, tum el cursu</a></span>
-                                    <br>
-                                    Eleifendelteneanauct or wisi et quisque ulla
-                                </div>
-                                <a href="#" class="readon">More </a>
+                            <div class="globalnews" style="margin: 0; height: 300px;">
+                                <ul class="spy">
+                                    <asp:Repeater runat="server" ID="repNewsView">
+                                        <ItemTemplate>
+                                            <li>
+                                                <div class="gn_static_1">
+                                                    <center>
+                                                        <a href='NewDetails.aspx?id=<%#Eval("ID") %>'>
+                                                            <img width="100" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt="Image" style="float: left; margin: 0; border: 0; padding-right: 5px;"></a></center>
+                                                    <span class="title">
+                                                        <a href='NewDetails.aspx?id=<%#Eval("ID") %>'><%# Eval("Title") %></a></span><br>
+                                                    <%#Utilities.StripTagsCharArray(Eval("Header").ToString().Substring(0, (Math.Min(Eval("Header").ToString().Length,50)))) + " ..." %>
+                                                </div>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+                                </ul>
                             </div>
+
                         </div>
                         <div class="gn_clear">
                         </div>
+
                     </div>
+
                 </div>
+                <a href="LastestNew.aspx" class="readon">Chi tiết </a>
             </div>
             <div class="wrapper-box module-welcome">
                 <div class="boxTitle">
                     <div class="title">
                         <div class="right-bg">
                             <div class="left-bg">
-                                <h3>
-                                   Giới thiệu
+                                <h3>Sản phẩm
                                 </h3>
                             </div>
                         </div>
@@ -109,19 +252,25 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                 <div class="clear">
                     <div class="boxIndent">
                         <div style="float: left; width: 100%;">
-                            <div class="globalnews" style="margin: 0">
+                            <div class="globalnews" style="margin: 0; height: 300px;">
                                 <div class="gn_static_2">
-                                    <div class="spacing-bot">
-                                        <center>
-                                            <a href="">
-                                                <img src="images/1page_img1.jpg" alt="Image" style="float: left; margin: 0; border: 0;"></a></center>
-                                    </div>
-                                    <span class="title"><a href="">Mauris fermentum dictum agna. Sed laoreet aliquam leo.</a></span>
-                                    <br>
-                                    <p>
-                                        Ut tellus dolor, dapibus eget, tum el cursus eleifend, elitenean auctor wi
-                                    </p>
-                                    <a class="readon" href="">more </a>
+                                    <ul class="spy1">
+                                        <asp:Repeater runat="server" ID="repProView">
+                                            <ItemTemplate>
+                                                <li>
+                                                    <div class="gn_static_1">
+                                                        <center>
+                                                            <a href='Product_Detail.aspx?id=<%#Eval("ID") %>'>
+                                                                <img width="100" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt="Image" style="float: left; margin: 0; border: 0; padding-right: 5px;"></a></center>
+                                                        <span class="title">
+                                                            <a href='Product_Detail.aspx?id=<%#Eval("ID") %>'><%# Eval("Name") %></a></span><br>
+                                                          <%# Utilities.StripTagsCharArray(Eval("Header").ToString().Substring(0, (Math.Min(Eval("Header").ToString().Length,100)))) + " ..." %>
+                                                    </div>
+                                                </li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -129,14 +278,14 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                         </div>
                     </div>
                 </div>
+                <a class="readon" href="Product.aspx">Chi tiết </a>
             </div>
             <div class="wrapper-box module-services">
                 <div class="boxTitle">
                     <div class="title">
                         <div class="right-bg">
                             <div class="left-bg">
-                                <h3>
-                                    Dịch vụ
+                                <h3>Dịch vụ
                                 </h3>
                             </div>
                         </div>
@@ -145,38 +294,32 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                 <div class="clear">
                     <div class="boxIndent">
                         <div style="float: left; width: 100%;">
-                            <div class="globalnews" style="margin: 0">
-                                <div class="gn_static_3">
-                                    <center>
-                                        <a href="">
-                                            <img src="images/num1.gif" alt="Image" style="float: left; margin: 3px; border: 0;"></a></center>
-                                    <span class="title"><a href="">Mauris fermentum dictu</a></span>
-                                    <br>
-                                    Ut tellus dolor, dapibus eg et, tum el cursus eleifend.
-                                </div>
-                                <div class="gn_static_3">
-                                    <center>
-                                        <a href="">
-                                            <img src="images/num2.gif" alt="Image" style="float: left; margin: 3px; border: 0;"></a></center>
-                                    <span class="title"><a href="">Ut tellus dolor, dapibus </a></span>
-                                    <br>
-                                    Eget, tum el cursus eleifend elitenean auctor wisi et isqu
-                                </div>
-                                <div class="gn_static_3">
-                                    <center>
-                                        <a href="">
-                                            <img src="images/num3.gif" alt="Image" style="float: left; margin: 3px; border: 0;"></a></center>
-                                    <span class="title"><a href="">Tum el cursus eleifend</a></span>
-                                    <br>
-                                    Elitenean auctor wisi et isqu e nulla. Vestibulum libero ni
-                                </div>
-                                <a href="" class="readon">More </a>
+                            <div class="globalnews" style="margin: 0; height: 300px;">
+                                <ul class="spy2">
+                                    <asp:Repeater runat="server" ID="repServiceView">
+                                        <ItemTemplate>
+                                            <li>
+                                                <div class="gn_static_1">
+                                                    <center>
+                                                        <a href='ServiceDetails.aspx?id=<%#Eval("ID") %>'>
+                                                            <img width="100" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt="Image" style="float: left; margin: 0; border: 0; padding-right: 5px;"></a></center>
+                                                    <span class="title">
+                                                        <a href='ServiceDetails.aspx?id=<%#Eval("ID") %>'><%# Eval("Name") %></a></span><br>
+                                                      <%#Utilities.StripTagsCharArray(Eval("Header").ToString().Substring(0, (Math.Min(Eval("Header").ToString().Length,100)))) + " ..." %>
+                                                </div>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+                                </ul>
+                               
                             </div>
                         </div>
                         <div class="gn_clear">
                         </div>
                     </div>
-                </div>
+                </div> <a href="Service.aspx" class="readon">Chi tiết </a>
+               
             </div>
         </div>
     </div>
@@ -190,8 +333,7 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                         <div class="title">
                             <div class="right-bg">
                                 <div class="left-bg">
-                                    <h3>
-                                        Testimonials
+                                    <h3>Testimonials
                                     </h3>
                                 </div>
                             </div>
@@ -199,7 +341,7 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                     </div>
                     <div class="clear">
                         <div class="boxIndent">
-                        <%=strTestimonials %>
+                            <%=strTestimonials %>
                             <%--<ul>
                                 <li>
                                     <div class="author">
@@ -216,8 +358,7 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
             </div>
             <!--left-->
             <!--center-->
-            <h3>
-                We offer a huge selection of spa parts and spa accessories
+            <h3>We offer a huge selection of spa parts and spa accessories
             </h3>
             <%=strAboutMyService %>
             <%--<p>
@@ -230,7 +371,7 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                 sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus museugiat
                 malesuada
             </p>--%>
-           
+
             <div id="content">
                 <div class="container">
                     <div class="clear">
@@ -246,8 +387,7 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pagin-bottom" align="center" valign="top">
-                                    </td>
+                                    <td class="pagin-bottom" align="center" valign="top"></td>
                                 </tr>
                             </tbody>
                         </table>

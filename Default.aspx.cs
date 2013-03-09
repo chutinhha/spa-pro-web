@@ -17,6 +17,52 @@ public partial class _Default : System.Web.UI.Page
             BindCompanyInfo();
             BindTestimonials();
             BindAboutMyService();
+            BindProduct();
+            BindService();
+            BindNews();
+        }
+    }
+
+    private void BindNews()
+    {
+        try
+        {
+            repNewsView.DataSource = NewsViewModel.SelectTopNews(10);
+            repNewsView.DataBind();
+
+        }
+        catch (Exception)
+        {
+            
+            throw;
+        }
+    }
+
+    private void BindService()
+    {
+        try
+        {
+            repServiceView.DataSource = ServicesViewModel.SelectTopService(10);
+            repServiceView.DataBind();
+        }
+        catch (Exception)
+        {
+            
+            throw;
+        }
+    }
+
+    private void BindProduct()
+    {
+        try
+        {
+            repProView.DataSource = ProductsViewModel.SelectTopProduct(10);
+            repProView.DataBind();
+        }
+        catch (Exception)
+        {
+            
+            throw;
         }
     }
     public void BindCompanyInfo()
@@ -31,4 +77,5 @@ public partial class _Default : System.Web.UI.Page
     {
         strTestimonials = FileViewModel.readFile("HomeButtom2.txt");
     }
+
 }

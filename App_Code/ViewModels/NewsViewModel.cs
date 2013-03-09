@@ -23,6 +23,7 @@ public class NewsViewModel
             {
                 New newItem = new New();
                 newItem.Id = model.ID;
+                newItem.Title = model.Title;
                 newItem.Header = model.Header;
                 newItem.Contents = model.Contents;
                 newItem.Author = model.Author;
@@ -55,6 +56,7 @@ public class NewsViewModel
             {
                 New changeItem = dc.News.Where(a => a.Id == model.ID).SingleOrDefault();
                 changeItem.Header = model.Header;
+                changeItem.Title = model.Title;
                 changeItem.Contents = model.Contents;
                 changeItem.Author = model.Author;
                 changeItem.Type_News = model.Type_News;
@@ -106,18 +108,18 @@ public class NewsViewModel
         {
             using (DataContentDataContext dc = new DataContentDataContext())
             {
-                
+
                 var items = from temp in dc.News
-                            where temp.CatID==CatID
+                            where temp.CatID == CatID
                             select temp;
 
 
 
                 foreach (var i in items)
                 {
-                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, 
+                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News,
                         i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate,
-                        i.Modifier, i.ModifyDate,"");
+                        i.Modifier, i.ModifyDate, i.Title);
                     lst.Add(n);
                 }
             }
@@ -137,7 +139,7 @@ public class NewsViewModel
         {
             using (DataContentDataContext dc = new DataContentDataContext())
             {
-                
+
                 var items = from temp in dc.News
                             select temp;
 
@@ -145,9 +147,9 @@ public class NewsViewModel
 
                 foreach (var i in items)
                 {
-                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, 
+                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News,
                         i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate,
-                        i.Modifier, i.ModifyDate,"");
+                        i.Modifier, i.ModifyDate, i.Title);
                     lst.Add(n);
                 }
             }
@@ -167,8 +169,8 @@ public class NewsViewModel
             using (DataContentDataContext dc = new DataContentDataContext())
             {
                 New i = dc.News.Where(a => a.Id == model.ID).SingleOrDefault();
-                return new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small, 
-                    i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate,i.Title);
+                return new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News, i.Link_Image_Small,
+                    i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate, i.Title);
             }
         }
         catch (Exception)
@@ -186,6 +188,33 @@ public class NewsViewModel
         catch (Exception)
         {
             return "";
+
+        }
+    }
+    public static List<NewsModel> SelectTopNews(int top)
+    {
+        List<NewsModel> lst = new List<NewsModel>();
+        try
+        {
+            using (DataContentDataContext dc = new DataContentDataContext())
+            {
+
+                var items = (from temp in dc.News
+                             select temp).Take(top);
+
+                foreach (var i in items)
+                {
+                    NewsModel n = new NewsModel(i.Id, i.Header, i.Contents, i.Author, i.Type_News,
+                        i.Link_Image_Small, i.Link_Image, i.Poster, i.PosterID, i.Creater, i.CreateDate,
+                        i.Modifier, i.ModifyDate, i.Title);
+                    lst.Add(n);
+                }
+            }
+            return lst;
+        }
+        catch (Exception)
+        {
+            return lst;
 
         }
     }

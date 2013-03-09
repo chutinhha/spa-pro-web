@@ -46,69 +46,54 @@
                                                     <td valign="top">
                                                         <div class="features">
                                                             <div class="sub_indent">
-                                                                <div class="wrapper row-1">
+                                                                <div class="wrapper row-2">
                                                                     <div class="col-1">
-                                                                        <h3>
-                                                                            Dịch vụ trị liệu
+                                                                        <h3>Dịch vụ trị liệu
                                                                         </h3>
+                                                                        <%if (topView != null)
+                                                                          {%>
+                                                                        
+                                                                        
                                                                         <span class="color-1">Pevonia mời các bạn trải nghiệm qua nhửng trị liệu tiên tiến và
                                                                             hiệu quả tại Spa</span>
                                                                         <div class="col-1">
                                                                             <h4>
-                                                                                TRỊ LIỆU PHỤC HỒI
+                                                                                <a href='ServiceDetails.aspx?id=<%=topView.ID %>'><%=topView.Name %></a>
                                                                             </h4>
-                                                                            <img class="img-left" src="images/5page_img2.jpg" alt="">
-                                                                            <p>
-                                                                                <span class="it">EYE CONTOUR TREATMENT </span>Trị liệu độc đáo này làm nhạt những
-                                                                                nếp nhăn và mệt mỏi vùng nhạy cảm quanh mắt. Contour Freeze-Dried Treatment sẽ rất
-                                                                                tuyệt vời, làm giảm tối đa sự sung huyết, tình trạng căng thẳng và mệt mỏi, đồng
-                                                                                thời chống lại những dấu hiệu lão hóa da
-                                                                            </p>
-                                                                            <br />
-                                                                            <span class="it">FACIAL ENHANCEMENTS </span>
-                                                                            <p>
-                                                                                Xóa mờ rõ rệt những nếp nhăn nhẹ và vết hằn sâu:
-                                                                                <ul class="list">
-                                                                                    <li>Trị liệu Cryo-Collagen với collagen tinh khiết, sẽ giúp phục hồi vùng da quanh mắt
-                                                                                        của bạn. </li>
-                                                                                    <li>Mặt nạ Ginkgo Biloba có tác dụng làm tan bọng mỡ mắt và quầng thêm quanh mắt.</li>
-                                                                                </ul>
-                                                                            </p>
+                                                                            <img class="img-left" src='<%=topView.Link_Image_Small.Replace("~/","") %>' alt="" />
+                                                                            <%=topView.Header %>
                                                                         </div>
+                                                                        <%} %>
                                                                     </div>
                                                                     <div class="col-2">
-                                                                        <h3>
-                                                                            Yêu thích
+                                                                        <h3>Yêu thích
                                                                         </h3>
-                                                                        <img alt="LOẠI BỎ CHAI CHÂN" class="img-left" src="images/5page_img1.jpg" /><br />
-                                                                        <h4>
-                                                                            LOẠI BỎ CHAI CHÂN</h4>
-                                                                        <span class="it">CALLO-PEEL* ANTI-CALLOUS ACID PEEL</span>
-                                                                        <p>
-                                                                            Lớp da chai phát sinh và tầng biểu bì dày ra khiến cho bàn chân bạn cảm thấy đau
-                                                                            và kém phần hấp dẫn. Hợp chất Salicylic Acid và Glycolic Acid có tính năng làm mềm
-                                                                            da, tái tạo da, và giúp cho da gót chân và lòng bàn chân trở nên mượt mà. Bàn chân
-                                                                            bạn sau khi được tái tạo, sẽ không còn lớp da chai, có độ ẩm và trở nên rất mềm
-                                                                            mại, mượt mà…
-                                                                        </p>
+                                                                         <%if (topView != null)
+                                                                          {%>
+                                                                        <h4><a href='ServiceDetails.aspx?id=<%=topLike.ID %>'><%=topLike.Name %></a></h4>
+                                                                        <img alt='<%=topLike.Name %>' class="img-left" src='<%=topLike.Link_Image_Small.Replace("~/","") %>' /><br />
+                                                                        <%=topLike.Header %>
+                                                                        <%} %>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="box_articles_2">
                                                                 <div class="wrapper row-2">
-                                                                    <div class="col-1">
-                                                                        <h4>
-                                                                            Trị liệu giúp da tươi mới & sáng bóng</h4>
-                                                                        <img class="img-left" src="images/5page_img2.jpg" alt=""><br>
-                                                                        <p>
-                                                                            <span class="it">“C” & SEA MASK</span> Một hỗn hợp ổnh định vitamin “C” kết hợp
-                                                                            với công thức bào chế công nghệ cao mới nhất từ loại rong biển dạng đông lạnh và
-                                                                            làm khô. Rất lý tưởng để xóa mờ những nếp nhăn, tăng cường tính đàn hồi của da,
-                                                                            giúp phục hồi màu da xám xỉn, do bị ảnh hưởng của ánh nắng. Da bạn sẽ đổi mới, săn
-                                                                            chắc hơn và hoàn toàn trơn mượt với làn da rực sáng.
-                                                                        </p>
-                                                                    </div>
-                                                                    <div class="col-1">
+                                                                    <asp:Repeater runat="server" ID="repServices">
+                                                                        <ItemTemplate>
+                                                                            <div class="col-1">
+                                                                                <h4><a href='ServiceDetails.aspx?id=<%#Eval("ID") %>'><%#Eval("Name") %></a></h4>
+                                                                                <img class="img-left" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt=""><br>
+
+                                                                                <%#Eval("Header") %>
+                                                                            </div>
+                                                                        </ItemTemplate>
+                                                                        <SeparatorTemplate>
+                                                                            <%#(Container.ItemIndex+1) % 3 == 0 ? "<div class='clr'> </div>" : ""  %>
+                                                                        </SeparatorTemplate>
+                                                                    </asp:Repeater>
+
+                                                                    <%-- <div class="col-1">
                                                                         <h4>
                                                                             Trị liệu phục hồi thanh xuân</h4>
                                                                         <img class="img-left" src="images/5page_img3.jpg" alt=""><br>
@@ -122,7 +107,7 @@
                                                                             do cử động nhiều của cảm xúc và nếp nhăn hằn sâu.
                                                                         </p>
                                                                     </div>
-                                                                    <div class="col-2">
+                                                                    <div class="col-1">
                                                                         <h4>
                                                                             Trị liệu phục hồi vẽ rạng rỡ</h4>
                                                                         <img class="img-left" src="images/5page_img4.jpg" alt=""><br>
@@ -136,8 +121,8 @@
                                                                             nên mềm dịu và có khả năng giữ nước rất cao, giúp cấu trúc săn chắc và nang lông
                                                                             khép lại. raesent vestibulum olestie.
                                                                         </p>
-                                                                    </div>
-                                                                    <div class="clr">
+                                                                    </div>--%>
+                                                                    <%-- <div class="clr">
                                                                     </div>
                                                                     <div class="col-1">
                                                                         <h4>
@@ -256,7 +241,7 @@
                                                                             lão hóa thẩm thấu tốt hơn, sau đó, dần dần mát lại, giúp cho màu da sáng hẳn lên.
                                                                             Bàn tay bạn sẽ trở lại với vẻ mượt mà, mềm mại và trẻ hóa.
                                                                         </p>
-                                                                    </div>
+                                                                    </div>--%>
                                                                 </div>
                                                             </div>
                                                         </div>

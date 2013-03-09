@@ -8,12 +8,20 @@ using System.Web;
 /// </summary>
 public class SolutionsViewModel
 {
-	public SolutionsViewModel()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    /// <summary>
+    /// Contructor of SolutionViewModel
+    /// </summary>
+    public SolutionsViewModel()
+    {
+        //
+        // TODO: Add constructor logic here
+        //
+    }
+    /// <summary>
+    /// Insert new Item for Solutions.
+    /// </summary>
+    /// <param name="model"></param>
+    /// <returns></returns>
     public static int Insert(SolutionsModel model)
     {
         try
@@ -22,6 +30,7 @@ public class SolutionsViewModel
             {
                 Solution newItem = new Solution();
                 newItem.ID = model.ID;
+                newItem.Name = model.Name;
                 newItem.Header = model.Header;
                 newItem.Contents = model.Contents;
                 newItem.Link_Image = model.Link_Image;
@@ -43,7 +52,11 @@ public class SolutionsViewModel
 
         }
     }
-
+    /// <summary>
+    /// Update new information for Solution Item
+    /// </summary>
+    /// <param name="model"></param>
+    /// <returns></returns>
     public static int Update(SolutionsModel model)
     {
         try
@@ -52,6 +65,7 @@ public class SolutionsViewModel
             {
                 Solution changeItem = dc.Solutions.Where(a => a.ID == model.ID).SingleOrDefault();
                 changeItem.Header = model.Header;
+                changeItem.Name = model.Name;
                 changeItem.Contents = model.Contents;
                 changeItem.Type_Solution = model.Type_Solution;
                 changeItem.Link_Image = model.Link_Image;
@@ -68,7 +82,11 @@ public class SolutionsViewModel
             return 0;
         }
     }
-
+    /// <summary>
+    /// Deleted Solution Item
+    /// </summary>
+    /// <param name="model"></param>
+    /// <returns></returns>
     public static int Delete(SolutionsModel model)
     {
         try
@@ -87,7 +105,10 @@ public class SolutionsViewModel
             return 0;
         }
     }
-
+    /// <summary>
+    /// Get all Solution Item.
+    /// </summary>
+    /// <returns></returns>
     public static List<SolutionsModel> SelectAll()
     {
         List<SolutionsModel> lst = new List<SolutionsModel>();
@@ -99,7 +120,7 @@ public class SolutionsViewModel
                             select temp;
                 foreach (var i in items)
                 {
-                    SolutionsModel n = new SolutionsModel(i.ID, i.Header, i.Contents, i.Link_Image_Small, i.Link_Image, i.Type_Solution, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
+                    SolutionsModel n = new SolutionsModel(i.ID, i.Name, i.Header, i.Contents, i.Link_Image_Small, i.Link_Image, i.Type_Solution, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
                     lst.Add(n);
                 }
             }
@@ -111,7 +132,11 @@ public class SolutionsViewModel
 
         }
     }
-
+    /// <summary>
+    /// get one Solution Item.
+    /// </summary>
+    /// <param name="model"></param>
+    /// <returns></returns>
     public static SolutionsModel SelectOne(SolutionsModel model)
     {
         try
@@ -119,7 +144,7 @@ public class SolutionsViewModel
             using (DataContentDataContext dc = new DataContentDataContext())
             {
                 Solution i = dc.Solutions.Where(a => a.ID == model.ID).SingleOrDefault();
-                return new SolutionsModel(i.ID, i.Header,i.Contents, i.Link_Image_Small, i.Link_Image, i.Type_Solution, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
+                return new SolutionsModel(i.ID, i.Name, i.Header, i.Contents, i.Link_Image_Small, i.Link_Image, i.Type_Solution, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
             }
         }
         catch (Exception)
@@ -128,7 +153,10 @@ public class SolutionsViewModel
             return new SolutionsModel();
         }
     }
-
+    /// <summary>
+    /// Create new Id when Create new Solution Item.
+    /// </summary>
+    /// <returns></returns>
     public static string GetNewId()
     {
         try
@@ -138,7 +166,32 @@ public class SolutionsViewModel
         catch (Exception)
         {
             return "";
-            
+
+        }
+    }
+
+    public static List<SolutionsModel> SelectTopService(string catID, int top)
+    {
+        List<SolutionsModel> lst = new List<SolutionsModel>();
+        try
+        {
+            using (DataContentDataContext dc = new DataContentDataContext())
+            {
+                var items = (from temp in dc.Solutions
+                             where temp.Type_Solution == catID.ToCharArray()[0]
+                             select temp).Take(top);
+                foreach (var i in items)
+                {
+                    SolutionsModel n = new SolutionsModel(i.ID, i.Name, i.Header, i.Contents, i.Link_Image_Small, i.Link_Image, i.Type_Solution, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
+                    lst.Add(n);
+                }
+            }
+            return lst;
+        }
+        catch (Exception)
+        {
+
+            return lst;
         }
     }
 }

@@ -142,4 +142,28 @@ public class ProductsViewModel
             return "error";
         }
     }
+
+    public static List<ProductsModel> SelectTopProduct(int top)
+    {
+        List<ProductsModel> lst = new List<ProductsModel>();
+        try
+        {
+            using (DataContentDataContext dc = new DataContentDataContext())
+            {
+                var items = (from temp in dc.Products
+                            select temp).Take(top);
+                foreach (var i in items)
+                {
+                    ProductsModel n = new ProductsModel(i.Id, i.Header, i.Name, i.Descrition, i.Price, i.Link_Image_Small, i.Link_Image, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
+                    lst.Add(n);
+                }
+            }
+            return lst;
+        }
+        catch (Exception)
+        {
+            return lst;
+
+        }
+    }
 }

@@ -9,6 +9,16 @@ public partial class Product : System.Web.UI.Page
 {
     public void Page_Load(object sender, EventArgs e)
     {
+        if (!IsPostBack)
+        {
+            BindData();
 
+        }
+    }
+
+    private void BindData()
+    {
+        repProducts.DataSource = ProductsViewModel.SelectAll();
+        repProducts.DataBind();
     }
 }

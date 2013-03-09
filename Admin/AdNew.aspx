@@ -37,16 +37,16 @@
                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
                 </ItemTemplate>
                 <ControlStyle CssClass="admin-table-titles admin-table-field" />
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Name" SortExpression="Name">
                 <EditItemTemplate>
-                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("Header") %>'></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("Title") %>'></asp:Label>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:Label ID="Label2" runat="server" Text='<%# Bind("Header") %>'></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("Title") %>'></asp:Label>
                 </ItemTemplate>
                 <ControlStyle CssClass="admin-table-titles admin-table-field" />
             </asp:TemplateField>
@@ -62,7 +62,7 @@
 
 
     </asp:GridView>
-    <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DataContentDataContext" EntityTypeName="" Select="new (Id, Header)" TableName="News">
+    <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DataContentDataContext" EntityTypeName="" Select="new (Id, Title)" TableName="News">
     </asp:LinqDataSource>
 
 </asp:Content>

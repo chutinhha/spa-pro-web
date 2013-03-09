@@ -22,6 +22,14 @@ a {
     text-decoration: underline;
 }
 
+H4 a {
+    color: #00AEEF;
+    text-decoration: none;
+}
+H4 a:hover {
+    color: #8b8b91;
+    text-decoration: underline;
+}
     a:hover {
         text-decoration: none;
     }
@@ -1610,7 +1618,7 @@ body, html {
 
 h3, #left h3, #right h3, .componentheading {
     color: #595959;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 30px;
     margin-bottom: 16px;
     text-align: left;
@@ -2753,7 +2761,7 @@ span.title {
 }
 
 .sub_indent {
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
 .module-welcome {
@@ -2837,7 +2845,7 @@ span.title {
 
 .box_articles_2 {
     border: 1px solid #e9e8e8;
-    padding: 21px 30px 10px 30px;
+    padding: 21px 10px 10px 10px;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -2916,7 +2924,7 @@ ul.list {
 
 .our_products .row-1 .col-1 {
     width: 232px;
-    margin-right: 54px;
+    margin-right: 44px;
 }
 
 .our_products .row-1 .col-2 {
@@ -2935,11 +2943,11 @@ ul.list {
 
 .latest_news .col-1 {
     width: 234px;
-    margin-right: 48px;
+    margin-right: 20px;
 }
 
 .latest_news .col-2 {
-    width: 520px;
+    width: 534px;
 }
 
 .color-1 {
@@ -2957,7 +2965,8 @@ ul.list {
 
 .features .row-2 .col-1 {
     width: 235px;
-    margin-right: 52px;
+    margin-right: 23px;
+    margin-left:23px;
 }
 
 .features .row-2 .col-2 {
@@ -2967,11 +2976,11 @@ ul.list {
 
 .solutions .row-1 .col-1 {
     width: 232px;
-    margin-right: 54px;
+    margin-right: 10px;
 }
 
 .solutions .row-1 .col-2 {
-    width: 520px;
+    width: 590px;
 }
 
 .solutions .row-2 .col-1 {
@@ -3022,4 +3031,39 @@ ul.list {
 
 .clr {
     clear: both;
+}
+.boxDonItem {
+    float: left;
+    padding: 0 10px;
+    width: 260px;
+    margin-right:10px;
+    border:#8b8b91 solid 1px;
+    border-radius:5px;
+}
+.boxDoiItem-img {
+    background: none repeat scroll 0 0 #EEEEEE;
+    float: left;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    position: relative;
+    width: 100px;
+}
+.boxDoiItem-content {
+    float: left;
+    padding-left: 10px;
+    width: 149px;
+}
+
+.read_more_news_hot_eva {
+    color: #74AA07;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: right;
+}
+.boxDonItem a
+{
+    color:#74AA07;
 }

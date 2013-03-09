@@ -35,7 +35,7 @@ public partial class Admin_AdNew : System.Web.UI.Page
             model = NewsViewModel.SelectOne(model);
             txtId.Text = model.ID;
             txtName.Text = model.Author;
-            //txtPrice.Text = model.Price;
+            txtTitle.Text = model.Title;
             cmdProType.SelectedValue = model.Type_News.ToString();
             showImgSmall.ImageUrl = model.Link_Image_Small;
             showImageBig.ImageUrl = model.Link_Image;
@@ -71,7 +71,7 @@ public partial class Admin_AdNew : System.Web.UI.Page
         NewsModel model = new NewsModel();
         model.ID = txtId.Text;
         model.Author = txtName.Text;
-        //model.Price = txtPrice.Text;
+        model.Title = txtTitle.Text;
         model.Type_News = (cmdProType.SelectedValue != "")?cmdProType.SelectedValue.ToCharArray()[0]:'0';
         model.Header = FTBHeader.Text;
         model.Contents = FTBContents.Text;
@@ -87,7 +87,7 @@ public partial class Admin_AdNew : System.Web.UI.Page
         NewsModel model = new NewsModel();
         model.ID = txtId.Text;
         model.Author = txtName.Text;
-        //model.Price = txtPrice.Text;
+        model.Title = txtTitle.Text;
         model.Type_News = (cmdProType.SelectedValue != "") ? cmdProType.SelectedValue.ToCharArray()[0] : '0';
         model.Header = FTBHeader.Text;
         model.Contents = FTBContents.Text;
