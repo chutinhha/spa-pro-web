@@ -43,11 +43,11 @@
             <td>
                 <asp:TextBox runat="server" Width="200" ID="txtName"></asp:TextBox></td>
         </tr>
-        <%-- <tr>
-            <td>Giá:</td>
+         <tr>
+            <td>Tiêu đề:</td>
             <td>
-                <asp:TextBox runat="server" ID="txtPrice"></asp:TextBox></td>
-        </tr>--%>
+                <asp:TextBox runat="server" Width="200" ID="txtTitle"></asp:TextBox></td>
+        </tr>
         <tr>
             <td>Loại tin tức:</td>
             <td>

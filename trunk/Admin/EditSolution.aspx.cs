@@ -34,7 +34,7 @@ public partial class Admin_AdSolution : System.Web.UI.Page
         {
             model = SolutionsViewModel.SelectOne(model);
             txtId.Text = model.ID;
-            //txtName.Text = model.Name;
+            txtName.Text = model.Name;
             //txtPrice.Text = model.Price;
             cmdSerType.SelectedValue = model.Type_Solution.ToString();
             showImgSmall.ImageUrl = model.Link_Image_Small;
@@ -70,7 +70,7 @@ public partial class Admin_AdSolution : System.Web.UI.Page
 
         SolutionsModel model = new SolutionsModel();
         model.ID = txtId.Text;
-        //model.Name = txtName.Text;
+        model.Name = txtName.Text;
         //model.Price = txtPrice.Text;
         model.Type_Solution = (cmdSerType.SelectedValue != "") ? cmdSerType.SelectedValue.ToCharArray()[0] : '0';
         model.Header = FTBHeader.Text;
@@ -86,7 +86,7 @@ public partial class Admin_AdSolution : System.Web.UI.Page
     {
         SolutionsModel model = new SolutionsModel();
         model.ID = txtId.Text;
-        //model.Name = txtName.Text;
+        model.Name = txtName.Text;
         //model.Price = txtPrice.Text;
         model.Type_Solution = (cmdSerType.SelectedValue != "") ? cmdSerType.SelectedValue.ToCharArray()[0] : '0';
         model.Header = FTBHeader.Text;

@@ -46,8 +46,7 @@
         .gn_static_2
         {
             border: 0;
-            padding: 0px;
-            height: 270px;
+            padding: 0px;       
             background-color: 0;
             overflow: hidden;
         }

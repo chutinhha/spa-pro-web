@@ -38,9 +38,9 @@
                                 <%=objNews.Header%>
                             </div>
                             <div class="">
-                                <span class="small"><%=objNews.Author%>jkhjkhkj</span>
+                                <span class="small"><%=objNews.Author%></span>
                                 <div class="createdate">
-                                   <%=objNews.CreateDate %>hghghjgj</div>
+                                   <%=objNews.CreateDate %></div>
                             </div>
                             <div class="wrapper1-border">
                                 <div class="wrapper1-bg clear">

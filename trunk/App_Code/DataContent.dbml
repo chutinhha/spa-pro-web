@@ -1,5 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="wed_Spa_Pro" Class="DataContentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=wed_Spa_Pro;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="wed_Spa_ProConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Web_Spa_Pro" Class="DataContentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=Web_Spa_Pro;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Web_Spa_ProConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Employees" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="Id" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="RoleId" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Creater" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Modifier" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ModifyDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.User_Log" Member="User_Logs">
     <Type Name="User_Log">
       <Column Name="ID" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -11,13 +24,35 @@
       <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Employees" Member="Employees">
-    <Type Name="Employee">
+  <Table Name="dbo.News" Member="News">
+    <Type Name="New">
       <Column Name="Id" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="EmployeeName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="RoleId" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Column Name="Username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Password" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Header" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Contents" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Type_News" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Link_Image_Small" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Link_Image" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Author" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Poster" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PosterID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Creater" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Modifier" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ModifyDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="CatID" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Products" Member="Products">
+    <Type Name="Product">
+      <Column Name="Id" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Header" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Descrition" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Price" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Type_Product" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Link_Image_Small" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Link_Image" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="Creater" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
       <Column Name="Modifier" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
@@ -38,22 +73,7 @@
       <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
       <Column Name="Modifier" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="ModifyDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Products" Member="Products">
-    <Type Name="Product">
-      <Column Name="Id" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Header" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Descrition" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Price" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="Type_Product" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Column Name="Link_Image_Small" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Link_Image" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Creater" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
-      <Column Name="Modifier" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="ModifyDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="ServiceView" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Solutions" Member="Solutions">
@@ -70,25 +90,7 @@
       <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
       <Column Name="Modifier" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="ModifyDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.News" Member="News">
-    <Type Name="New">
-      <Column Name="Id" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Header" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
-      <Column Name="Contents" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
-      <Column Name="Type_News" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Column Name="Link_Image_Small" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Link_Image" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-      <Column Name="Author" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Poster" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="PosterID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="Creater" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="CreateDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
-      <Column Name="Modifier" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="ModifyDate" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
-      <Column Name="CatID" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
-      <Column Name="Title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

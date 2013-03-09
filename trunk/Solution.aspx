@@ -49,102 +49,79 @@
                                                             <div class="sub_indent">
                                                                 <div class="wrapper row-1">
                                                                     <div class="col-1">
-                                                                        <h3>Our 
-                                      solutions
+                                                                        <h3>Giải pháp làm đẹp
                                                                         </h3>
-                                                                        <img class="p1" src="images/6page_img1.jpg" alt=""><br>
+                                                                        <img class="p1" src="images/6page_img1.jpg" alt=""/><br/>
                                                                         <div class="p1">
                                                                             <ul class="list">
-                                                                                <li><a href="#">Molestie lacus aenean nonummy </a></li>
-                                                                                <li><a href="#">Hendrerit mauris phasellus porta </a></li>
-                                                                                <li><a href="#">Fusce suscipit varius mi cum</a></li>
-                                                                                <li><a href="#">Sociis natoque penatibus magnis </a></li>
-                                                                                <li><a href="#">Dis parturient montes nascetur </a></li>
+                                                                                <li><a href="Solution.aspx?id=1">Làm Đẹp </a></li>
+                                                                                <li><a href="Solution.aspx?id=2">Trang điểm </a></li>
+                                                                                <li><a href="Solution.aspx?id=3">Dưỡng da</a></li>
+                                                                                <li><a href="Solution.aspx?id=4">Tóc đẹp </a></li>
+                                                                                <li><a href="Solution.aspx?id=5">Mỹ phẩm </a></li>
+                                                                                <li><a href="Solution.aspx?id=6">Bí quyết đẹp </a></li>
+                                                                                <li><a href="Solution.aspx?id=7">Khõe và đẹp </a></li>
+
                                                                             </ul>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-2">
-                                                                        <h3>Solutions 
-                                     showcase
-                                                                        </h3>
+                                                                        <% for (int i = 0; i < lst.Count; i++)
+                                                                           {
+                                                                               if (i == 0)
+                                                                               {
+                                                                        %>
                                                                         <div class="wrapper p1">
-                                                                            <img class="img-left" src="images/6page_img2.jpg" alt="">
-                                                                            <strong>Lorem ipsum dolor sit amet, consectetuert adipiscing elit lorem dolor. </strong>
-                                                                            <p>
-                                                                                Sedut perspiciatis unde omnis iste natus error sivoluptatem accusantium doloremque
-                                        laudan-<br>
-                                                                                tium totam rem aperiam eaque ipsa quae abm illo inventore veritatis et quasin.
-                                                                            </p>
+                                                                            <img class="img-left" src='<%=lst[i].Link_Image_Small.Replace("~/","") %>' alt="" />
+                                                                            <strong><a style="color: #74AA07;" href="SolutionDetails.aspx?id=<%=lst[i].ID %>"><%=lst[i].Name %></a> </strong>
+                                                                            <%=lst[i].Header %>
                                                                         </div>
-                                                                        <div class="wrapper">
-                                                                            <img class="img-left" src="images/6page_img3.jpg" alt="">
-                                                                            <strong>Sed ut perspiciatis unde omnis iste natuse error sit voluptatem accusantium.
-                                                                            </strong>
-                                                                            <p>
-                                                                                Svoluptatem accusantium doloremque laudan-<br>
-                                                                                tium totam rem aperiam eaque ipsa quae abm illo inventore veritatis quasin architecto
-                                        beatae vitae dicta sunt explicaboemo.
-                                                                            </p>
+                                                                        <%
+                                                                               }
+                                                                               else
+                                                                               {
+                                                                        %>
+
+                                                                         <div class="boxDonItem">
+                                                                            <img class="boxDoiItem-img" src='<%=lst[i].Link_Image_Small.Replace("~/","") %>' alt="" />
+                                                                            <div class="boxDoiItem-content">
+                                                                                <strong><a href="SolutionDetails.aspx?id=<%=lst[i].ID %>"><%=lst[i].Name %></a>
+                                                                                </strong>
+                                                                               <%=lst[i].Header %>
+                                                                            </div>
+                                                                            <div class="read_more_news_hot_eva">
+                                                                                <a href="SolutionDetails.aspx?id=<%=lst[i].ID %>">&gt;&gt; Xem tiếp</a>
+                                                                            </div>
+                                                                            <div class="clr"></div>
                                                                         </div>
+                                                                        <%    
+                                                                               }
+
+                                                                           }          
+                                                                        %>
+
+                                                                       
+                                                                       <%-- <div class="boxDonItem">
+                                                                            <img class="boxDoiItem-img" src="images/6page_img3.jpg" alt="" />
+                                                                            <div class="boxDoiItem-content">
+                                                                                <strong><a href="#">Sed ut perspiciatis unde </a>
+                                                                                </strong>
+                                                                                <p>
+                                                                                    Svoluptatem accusantium doloremque laudan-<br>
+                                                                                    tium totam rem aperiam eaque ipsa quae abm 
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="read_more_news_hot_eva">
+                                                                                <a href="#">&gt;&gt; Xem tiếp</a>
+                                                                            </div>
+                                                                            <div class="clr"></div>
+                                                                        </div>--%>
+                                                                        <div class="clr"></div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="row-1">
-                                                                    <h3>About 
-                                    solutions
-                                                                    </h3>
-                                                                    <strong>Lorem ipsum dolor siti amet consectetuert adipiscing elit lorem dolor perspiciatis
-                                    undem omnis iste natus error sit voluptatem accusantium doloremque unde omnis iste
-                                    natus error sit voluptatem accusantium doloremque</strong>
-                                                                    <p>
-                                                                        Sedut perspiciatis unde omnis iste natus error sivoluptatem accusantium doloremque
-                                    laudantium totam rem aperiam eaque psame quaem abm illo inventore veritats quasin
-                                    architecto beatae vitaem dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                    sit aspernatur aut odit aut fugitu sed quia consequuntur magni dolores eos qui ratione
-                                    voluptatem.
-                                                                    </p>
-                                                                    <strong>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                    porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient
-                                    montes, nascetur ridiculus mus. Nulla dui </strong>
-                                                                    <p>
-                                                                        Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a,
-                                    lorem. Maecenas tristique orci ac sem. Duis ultriciesene pharetra magna. Donec accumsan
-                                    malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet.
-                                                                    </p>
-                                                                </div>
+
                                                             </div>
-                                                            <div class="box_articles_2">
-                                                                <div class="wrapper row-2">
-                                                                    <div class="col-1">
-                                                                        <h3>Ideal
-                                     solutions
-                                                                        </h3>
-                                                                        <div class="p1">
-                                                                            <ul class="list">
-                                                                                <li><a href="#">Molestie lacus aenean nonummy </a></li>
-                                                                                <li><a href="#">Hendrerit mauris phasellus porta </a></li>
-                                                                                <li><a href="#">Fusce suscipit varius mi cum</a></li>
-                                                                                <li><a href="#">Sociis natoque penatibus magnis </a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-2">
-                                                                        <h3>customers 
-                                     solutions
-                                                                        </h3>
-                                                                        <p>
-                                                                            <span class="it">Lorem ipsum dolor sitamet consectetuer</span> adipiscing elit raesent
-                                      vestibulum olestie lacus psum dolor sit amet, consectetuer adipiscing elit. Praesent
-                                      vestibulum molestie.
-                                                                        </p>
-                                                                        <p>
-                                                                            <span class="it">Aenean nonummy hendrerit maurishasellus</span> portausce suscipit
-                                      varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                      ridiculus mus. Nulla dui. Fusceme feugiat malesuada odio. Morbi nunc odio, gravida
-                                      at, cursus nec, luctus.
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+
                                                         </div>
                                                     </td>
                                                 </tr>

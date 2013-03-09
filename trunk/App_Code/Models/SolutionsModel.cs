@@ -14,11 +14,12 @@ public class SolutionsModel : BaseModel
         // TODO: Add constructor logic here
         //
     }
-    public SolutionsModel(string id, string header, string content,
+    public SolutionsModel(string id,string name, string header, string content,
         string linkImageSmall, string linkImage, Char? typeSolution,
         string creater, string createDate, string modifier, string modifyDate)
     {
         this.ID = id;
+        this.Name = name;
         this.Contents = content;
         this.Header = header;
         this.Type_Solution = typeSolution;
@@ -29,6 +30,7 @@ public class SolutionsModel : BaseModel
         this.Modifier = modifier;
         this.ModifyDate = modifyDate;
     }
+    public string Name { get; set; }
     public string Header { get; set; }
     public string Contents { get; set; }
     public Char? Type_Solution { get; set; }
