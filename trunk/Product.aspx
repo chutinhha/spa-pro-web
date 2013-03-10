@@ -81,10 +81,10 @@
                                                                             <div class="col-1">
                                                                                 <h4><a href='Product_Detail.aspx?id=<%#Eval("ID") %>'><%#Eval("Name") %> </a></h4>
                                                                                 <a href='Product_Detail.aspx?id=<%#Eval("ID") %>'><img class="img-left" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt=""></a>
-                                                                                <p><strong>Price: <%#Eval("Price") %></strong> </p>
+                                                                                <p><strong>Price: <%# Utilities.FormatMoneyTypeFrice(Eval("Price").ToString()) %></strong> </p>
                                                                                 <%#Eval("Header") %>
                                                                                 <br />
-                                                                                <a href="Product_Detail.aspx" class="readon">Chi tiết </a>
+                                                                                <a href='Product_Detail.aspx?id=<%#Eval("ID") %>' class="readon">Chi tiết </a>
                                                                             </div>
                                                                         </ItemTemplate>
                                                                         <SeparatorTemplate>
@@ -94,13 +94,11 @@
 
                                                                 </div>
                                                                 <div class="row-1">
-                                                                    <h3>Ligne Rose </h3>
+                                                                    <h3><%=pro.Name %></h3>
                                                                     <div class="wrapper">
-                                                                        <img class="img-left" src="images/3page_img3.jpg" alt="">
-                                                                        <strong>Rosacea hay Acne Rosacea thể hiện rõ ở triệu chứng da ửng đỏ thường xuyên </strong>
-                                                                        <p>
-                                                                            Mạch máu li ti giãn nở, sung huyết và phát sinh mụn bọc. Những triệu chứng nghiêm trọng này sẽ làm da bị tổn thương vĩnh viễn nếu chẩn đoán không chính xác.
-                                                                        </p>
+                                                                        <img class="img-left" src='<%=pro.Link_Image_Small.Replace("~/","") %>' alt="">
+                                                                        <strong>Price: <%= Utilities.FormatMoneyTypeFrice( pro.Price )%></strong>
+                                                                        <%=pro.Descrition %>
                                                                     </div>
                                                                 </div>
                                                             </div>

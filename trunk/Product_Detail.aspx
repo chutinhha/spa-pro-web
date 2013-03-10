@@ -97,9 +97,29 @@
                                                                        
                                                                     </div>
 
-
+                                                                    
                                                                 </div>
+                                                                <div class="box_articles_2">
+                                                                <div class="wrapper row-2">
+                                                                    <div class="col-1">
 
+                                                                        <div class="p1">
+                                                                            <ul class="list">
+                                                                                <li><a id="lt1">Những nguyên liệu tốt nhất từ đại dương và thảo mộc </a></li>
+                                                                                <li><a id="lt2">Hiệu quả trị liệu được đảm bảo </a></li>
+                                                                                <li><a id="lt3">Mối quan hệ với thiên nhiên</a></li>
+
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-2" id="cntPresent">
+
+
+                                                                        <p><span class="it">Là những yếu tố tinh khiết nhất của thiên nhiên kết hợp với phương thức điểu chế công nghệ cao </span>cho bạn sự trải nghiệm độc đáo và một kết quả hơn cả sự mông đợi</p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                             </div>
 
                                                         </div>

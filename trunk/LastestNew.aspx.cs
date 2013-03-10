@@ -41,13 +41,13 @@ public partial class Service : System.Web.UI.Page
         if (Id != "")
         {
 
-            List<NewsModel> lst = NewsViewModel.SelectAll(Id);
+            List<NewsModel> lst = NewsViewModel.SelectTopNews(13,Id);
             lstViewNew.DataSource = lst;
             lstViewNew.DataBind();
         }
         else
         {
-            List<NewsModel> lst = NewsViewModel.SelectAll();
+            List<NewsModel> lst = NewsViewModel.SelectTopNews(13);
             lstViewNew.DataSource = lst;
             lstViewNew.DataBind();
         }

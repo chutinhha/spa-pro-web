@@ -51,8 +51,10 @@
                                             <tr>
                                                 <td valign="top">
                                                     <img class="img-left" src='<%=objService.Link_Image_Small.Replace("~/","") %>' alt="" />
-                                                    <%=objService.Header %>
+                                                    <strong>Price: <%= Utilities.FormatMoneyTypeFrice( objService.Price) %></strong>
+                                                     <%=objService.Header %>
                                                     <br />
+                                                   
                                                     <%=objService.Descrition %>
                                                 </td>
                                             </tr>
