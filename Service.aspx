@@ -46,33 +46,39 @@
                                                     <td valign="top">
                                                         <div class="features">
                                                             <div class="sub_indent">
-                                                                <div class="wrapper row-2">
+                                                                <div class="wrapper row-1">
                                                                     <div class="col-1">
                                                                         <h3>Dịch vụ trị liệu
                                                                         </h3>
                                                                         <%if (topView != null)
                                                                           {%>
-                                                                        
-                                                                        
+
+
                                                                         <span class="color-1">Pevonia mời các bạn trải nghiệm qua nhửng trị liệu tiên tiến và
                                                                             hiệu quả tại Spa</span>
                                                                         <div class="col-1">
                                                                             <h4>
                                                                                 <a href='ServiceDetails.aspx?id=<%=topView.ID %>'><%=topView.Name %></a>
                                                                             </h4>
-                                                                            <img class="img-left" src='<%=topView.Link_Image_Small.Replace("~/","") %>' alt="" />
-                                                                            <%=topView.Header %>
+                                                                            <a href='ServiceDetails.aspx?id=<%=topView.ID %>'>
+                                                                                <img class="img-left" src='<%=topView.Link_Image_Small.Replace("~/","") %>' alt="" /></a>
+                                                                            <strong>Price: <%= Utilities.FormatMoneyTypeFrice(topView.Price) %></strong>
+                                                                            <p>
+                                                                                <%=Utilities.StripTagsCharArray( topView.Header,500) %>
+                                                                            </p>
                                                                         </div>
                                                                         <%} %>
                                                                     </div>
                                                                     <div class="col-2">
                                                                         <h3>Yêu thích
                                                                         </h3>
-                                                                         <%if (topView != null)
+                                                                        <%if (topLike != null)
                                                                           {%>
                                                                         <h4><a href='ServiceDetails.aspx?id=<%=topLike.ID %>'><%=topLike.Name %></a></h4>
-                                                                        <img alt='<%=topLike.Name %>' class="img-left" src='<%=topLike.Link_Image_Small.Replace("~/","") %>' /><br />
-                                                                        <%=topLike.Header %>
+                                                                        <a href='ServiceDetails.aspx?id=<%=topLike.ID %>'>
+                                                                            <img alt='<%=topLike.Name %>' class="img-left" src='<%=topLike.Link_Image_Small.Replace("~/","") %>' /></a><br />
+                                                                        <strong>Price: <%= Utilities.FormatMoneyTypeFrice(topLike.Price) %></strong>
+                                                                        <p><%=Utilities.StripTagsCharArray( topLike.Header,200) %></p>
                                                                         <%} %>
                                                                     </div>
                                                                 </div>
@@ -83,9 +89,12 @@
                                                                         <ItemTemplate>
                                                                             <div class="col-1">
                                                                                 <h4><a href='ServiceDetails.aspx?id=<%#Eval("ID") %>'><%#Eval("Name") %></a></h4>
-                                                                                <img class="img-left" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt=""><br>
+                                                                                <a href='ServiceDetails.aspx?id=<%#Eval("ID") %>'>
+                                                                                    <img class="img-left" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt=""></a>
+                                                                                <br />
+                                                                                <strong>Price: <%# Utilities.FormatMoneyTypeFrice(Eval("Price").ToString()) %></strong>
 
-                                                                                <%#Eval("Header") %>
+                                                                                <p><%# Utilities.StripTagsCharArray( Eval("Header").ToString(),200) %></p>
                                                                             </div>
                                                                         </ItemTemplate>
                                                                         <SeparatorTemplate>

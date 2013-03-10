@@ -210,8 +210,8 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                     <div class="boxIndent">
                         <div style="float: left; width: 100%;">
                             <div class="globalnews" style="margin: 0; height: 300px;">
-                                <ul class="spy">
-                                    <asp:Repeater runat="server" ID="repNewsView">
+                                <ul class="spy" style="height: 280px;">
+                                     <asp:Repeater runat="server" ID="repNewsView">
                                         <ItemTemplate>
                                             <li>
                                                 <div class="gn_static_1">
@@ -220,12 +220,12 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                                                             <img width="100" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt="Image" style="float: left; margin: 0; border: 0; padding-right: 5px;"></a></center>
                                                     <span class="title">
                                                         <a href='NewDetails.aspx?id=<%#Eval("ID") %>'><%# Eval("Title") %></a></span><br>
-                                                    <%#Utilities.StripTagsCharArray(Eval("Header").ToString().Substring(0, (Math.Min(Eval("Header").ToString().Length,50)))) + " ..." %>
+                                                    <%#Utilities.StripTagsCharArray(Eval("Header").ToString(),100) %>
                                                 </div>
                                             </li>
                                         </ItemTemplate>
                                     </asp:Repeater>
-
+                                   
                                 </ul>
                             </div>
 
@@ -264,7 +264,7 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                                                                 <img width="100" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt="Image" style="float: left; margin: 0; border: 0; padding-right: 5px;"></a></center>
                                                         <span class="title">
                                                             <a href='Product_Detail.aspx?id=<%#Eval("ID") %>'><%# Eval("Name") %></a></span><br>
-                                                          <%# Utilities.StripTagsCharArray(Eval("Header").ToString().Substring(0, (Math.Min(Eval("Header").ToString().Length,100)))) + " ..." %>
+                                                        <%# Utilities.StripTagsCharArray(Eval("Header").ToString(),100) %>
                                                     </div>
                                                 </li>
                                             </ItemTemplate>
@@ -305,21 +305,22 @@ là một trong những tiêu chí quan trọng trong thang điểm đánh giá 
                                                             <img width="100" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt="Image" style="float: left; margin: 0; border: 0; padding-right: 5px;"></a></center>
                                                     <span class="title">
                                                         <a href='ServiceDetails.aspx?id=<%#Eval("ID") %>'><%# Eval("Name") %></a></span><br>
-                                                      <%#Utilities.StripTagsCharArray(Eval("Header").ToString().Substring(0, (Math.Min(Eval("Header").ToString().Length,100)))) + " ..." %>
+                                                    <%#Utilities.StripTagsCharArray(Eval("Header").ToString(),100) %>
                                                 </div>
                                             </li>
                                         </ItemTemplate>
                                     </asp:Repeater>
 
                                 </ul>
-                               
+
                             </div>
                         </div>
                         <div class="gn_clear">
                         </div>
                     </div>
-                </div> <a href="Service.aspx" class="readon">Chi tiết </a>
-               
+                </div>
+                <a href="Service.aspx" class="readon">Chi tiết </a>
+
             </div>
         </div>
     </div>

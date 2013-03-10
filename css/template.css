@@ -2558,6 +2558,23 @@ div.maximenuCKH div.maximenuCK2 {
     margin-bottom: 21px;
 }
 
+.p3
+{
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding:3px;
+    width:267px;
+    margin:0 2px 5px 2px;
+    float:left;
+}
+    .p3 a
+    {
+        font-size:14px;
+    }
+.p1 a
+{
+      font-size:14px;
+}
 .color-2 {
     color: #f3a713 !important;
 }
@@ -2887,7 +2904,8 @@ ul.list {
             }
 
 .p1 {
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
+    border-bottom:1px dotted #ccc;
 }
 
 .img-left {
@@ -2947,7 +2965,7 @@ ul.list {
 }
 
 .latest_news .col-2 {
-    width: 534px;
+    width: 578px;
 }
 
 .color-1 {

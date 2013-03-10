@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 
@@ -20,7 +21,7 @@ public class Utilities
     /// <summary>
     /// Remove HTML tags from string using char array.
     /// </summary>
-    public static string StripTagsCharArray(string source)
+    public static string StripTagsCharArray(string source, int splitLength)
     {
         char[] array = new char[source.Length];
         int arrayIndex = 0;
@@ -45,7 +46,57 @@ public class Utilities
                 arrayIndex++;
             }
         }
-        return new string(array, 0, arrayIndex);
+        string result = new string(array, 0, arrayIndex);
+        result = result.Substring(0, (Math.Min(result.Length, splitLength))) + " ...";
+        return result;
+
     }
+    /// <summary>
+    /// Format string to morney style 1,000,000 VND
+    /// </summary>
+    /// <param name="price"></param>
+    /// <returns></returns>
+    public static string FormatMoneyTypeFrice(string price)
+    {
+        try
+        {
+            return string.Format("{0:0,0}", double.Parse(price)) + " VND";
+        }
+        catch (Exception)
+        {
+            return price;
+        }
+    }
+    /// <summary>
+    /// format date from string "20130310" to "10/03/2013"
+    /// </summary>
+    /// <param name="date"></param>
+    /// <returns></returns>
+    public static string FormatDateType(string date)
+    {
+        try
+        {
+            string format;
+            DateTime result;
+            CultureInfo provider = CultureInfo.InvariantCulture;
+            format = "yyyyMMdd";
+            try
+            {
+                result = DateTime.ParseExact(date, format, provider);
+
+
+            }
+            catch (FormatException)
+            {
+                result = DateTime.Now;
+            }
+            return result.ToString("dd/MM/yyyy");
+        }
+        catch (Exception)
+        {
+            return date;
+        }
+    }
+
 }
 

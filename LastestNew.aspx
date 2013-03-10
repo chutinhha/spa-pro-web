@@ -75,113 +75,56 @@
                                                                         <div class="wrapper">
                                                                             <img class="img-left" src="images/4page_img4.jpg" alt="">
                                                                             
-                                                                            <strong><a href="NewDetails.aspx?Id=4">Quý ông</a></strong>
+                                                                            <strong><a href="LastestNew.aspx?Id=4">Quý ông</a></strong>
                                                                             <p class="p1">
                                                                                 Góc đàn ông</p>
                                                                         </div>
                                                                                                                                                 <div class="wrapper">
                                                                             <img class="img-left" src="images/4page_img4.jpg" alt="">
                                                                             
-                                                                            <strong><a href="NewDetails.aspx?Id=5">Thực phẩm</a></strong>
+                                                                            <strong><a href="LastestNew.aspx?Id=5">Thực phẩm</a></strong>
                                                                             <p class="p1">
                                                                                 Ăn gì cho cuộc sống hằng ngày</p>
                                                                         </div>
                                                                                                                                                 <div class="wrapper">
                                                                             <img class="img-left" src="images/4page_img4.jpg" alt="">
                                                                             
-                                                                            <strong><a href="NewDetails.aspx?Id=6">Làm đẹp</a></strong>
+                                                                            <strong><a href="LastestNew.aspx?Id=6">Làm đẹp</a></strong>
                                                                             <p class="p1">
                                                                                 Người phụ nữ đẹp</p>
                                                                         </div>
                                                                                                                                                 <div class="wrapper">
                                                                             <img class="img-left" src="images/4page_img4.jpg" alt="">
                                                                             
-                                                                            <strong><a href="NewDetails.aspx?Id=7">Bí Quyết mặc đẹp</a></strong>
+                                                                            <strong><a href="LastestNew.aspx?Id=7">Bí Quyết mặc đẹp</a></strong>
                                                                             <p class="p1">
                                                                                 Thế nào là hợp thời trang</p>
                                                                         </div>
                                                                                                                                                 <div class="wrapper">
                                                                             <img class="img-left" src="images/4page_img4.jpg" alt="">
                                                                             
-                                                                            <strong><a href="NewDetails.aspx?Id=8">Trang điểm</a></strong>
+                                                                            <strong><a href="LastestNew.aspx?Id=8">Trang điểm</a></strong>
                                                                             <p class="p1">
                                                                                 Kinh nghiệm trang điểm</p>
                                                                         </div>
                                                                     </div>
-                                                                    <%--<div class="col-1">
-                                    <h3>
-                                      Special 
-                                     events
-                                    </h3>
-                                    <img class="img-indent" src="images/4page_img5.jpg" alt=""><br>
-                                    <strong>Lorem ipsum dolor siamet consectetuert adipiscing elit lorem. </strong>
-                                    <p>
-                                      Sedut perspiciatis unde omnistnatuse errosivoluptatem accusantium doloren laudantium
-                                      totam renaper.</p>
-                                    <div class="p1">
-                                      <ul class="list">
-                                        <li><a href="#">Lorem ipsum damet consectetuer </a></li>
-                                        <li><a href="#">Adipiscing elit praesent vestibulum </a></li>
-                                        <li><a href="#">Molestie lacus aenean nonummy </a></li>
-                                        <li><a href="#">Hendrerit mauris phasellus porta </a></li>
-                                      </ul>
-                                    </div>
-                                    <p>
-                                      Sedut perspiciatis unde omnistnatuse errosivoluptatem accusantium doloren laudantium
-                                      totam renaperiam eaquem ipsa quae abm illo inventorevitae dicta sunt explicabo nemo
-                                      enim.</p>
-                                  </div>--%>
+                                                                    
                                                                     <div class="col-2">
                                                                         <h3>
                                                                         </h3>
                                                                         <asp:ListView ID="lstViewNew" runat="server">
                                                                             <ItemTemplate>
-                                                                                <div class="wrapper p1">
-                                                                                    <img class="img-left" src='<%# Eval("Link_Image_Small") %>' alt="">
-                                                                                    <strong>
-                                                                                        <a href="NewDetails.aspx?id=<%#Eval("ID") %>"><%# Eval("Title")%> 
-                                                                                        </a>
-                                                                                    </strong>
-                                                                                    <p>
-                                                                                        <%# Eval("Header")%>
-                                                                                    </p>
-                                                                                </div>
+                                                                              
+	                                                                            <%#((Container.DataItemIndex) == 0 ) ?"<div class='wrapper p1'><img class='img-left' src='" + Eval("Link_Image_Small").ToString()+"' alt=''><strong><a href='NewDetails.aspx?id=" + Eval("ID") + "'>" + Eval("Title") + "</a></strong><p>" + Eval("Header") + "</p></div>" : "<div class='wrapper p3'><img class='img-left' width='150'  src='" + Eval("Link_Image_Small").ToString()+"' alt=''><strong><a href='NewDetails.aspx?id=" + Eval("ID") + "'>" + Eval("Title") + "</a></strong><p>" +Utilities.StripTagsCharArray(  Eval("Header").ToString(),200) + "</p></div>"  %>
+                                                                               
                                                                             </ItemTemplate>
                                                                         </asp:ListView>
+                                                                       
 
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <%--<div class="box_articles_2">
-                                                                <div class="wrapper row-2">
-                                                                    <h3>
-                                                                        What's new?
-                                                                    </h3>
-                                                                    <p>
-                                                                        <span class="it">Lorem ipsum dolor sitamet consectetuer</span> adipiscing elit raesent
-                                                                        vestibulum olestie lacus tenean nonummy hendrerit mauris phasellus porta. Fusce
-                                                                        suscipit variusen mi. Cum sociis natoque ipsum dolor sit amet consectetuer adipiscing
-                                                                        elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus
-                                                                        porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis diseme parturient
-                                                                        montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc
-                                                                        odio, gravida at, cursus nec, luctus a, lorem.
-                                                                    </p>
-                                                                    <p>
-                                                                        <span class="it">Maecenas tristique orci ac sem dtuis</span> ultricies pharetra
-                                                                        magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum doloret sitem
-                                                                        amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam
-                                                                        leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean
-                                                                        auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
-                                                                        eu lacus.</p>
-                                                                    <p>
-                                                                        <span class="it">Quisque nulla vestibulum libero nisl</span> porta vel, scelerisque
-                                                                        eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla
-                                                                        facilisi Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et
-                                                                        ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ute pharetra
-                                                                        augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt ac, viverra sed,
-                                                                        nulla. Donec porta.</p>
-                                                                </div>
-                                                            </div>--%>
+                                                          
                                                         </div>
                                                     </td>
                                                 </tr>

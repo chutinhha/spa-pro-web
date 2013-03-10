@@ -142,7 +142,11 @@ public class ProductsViewModel
             return "error";
         }
     }
-
+    /// <summary>
+    /// Select top product to view in default page.
+    /// </summary>
+    /// <param name="top"></param>
+    /// <returns></returns>
     public static List<ProductsModel> SelectTopProduct(int top)
     {
         List<ProductsModel> lst = new List<ProductsModel>();
@@ -163,6 +167,32 @@ public class ProductsViewModel
         catch (Exception)
         {
             return lst;
+
+        }
+    }
+
+    public static ProductsModel GetRandomPro()
+    {
+        ProductsModel pro = new ProductsModel();
+        try
+        {
+
+            using (DataContentDataContext dc = new DataContentDataContext())
+            {
+                var items = (from temp in dc.Products
+                             select temp);
+                int count = items.Count(); // 1st round-trip
+                int index = new Random().Next(count);
+                Product i = items.Skip(index).FirstOrDefault();
+                ProductsModel p = new ProductsModel(i.Id, i.Header, i.Name, i.Descrition, i.Price, i.Link_Image_Small, i.Link_Image, i.Creater, i.CreateDate, i.Modifier, i.ModifyDate);
+                pro = p;
+                
+            }
+            return pro;
+        }
+        catch (Exception)
+        {
+            return pro;
 
         }
     }

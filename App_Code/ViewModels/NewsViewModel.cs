@@ -191,7 +191,21 @@ public class NewsViewModel
 
         }
     }
+    /// <summary>
+    /// Select top new no category
+    /// </summary>
+    /// <param name="top"></param>
+    /// <returns></returns>
     public static List<NewsModel> SelectTopNews(int top)
+    {
+        return SelectTopNews(top,"");
+    }
+    /// <summary>
+    /// Select top Category
+    /// </summary>
+    /// <param name="top"></param>
+    /// <returns></returns>
+    public static List<NewsModel> SelectTopNews(int top, string catID)
     {
         List<NewsModel> lst = new List<NewsModel>();
         try
@@ -199,8 +213,10 @@ public class NewsViewModel
             using (DataContentDataContext dc = new DataContentDataContext())
             {
 
-                var items = (from temp in dc.News
-                             select temp).Take(top);
+                var items = (catID == "") ?(from temp in dc.News
+                                            select temp).Take(top) : (from temp in dc.News
+                                                                      where temp.CatID == catID
+                                                                      select temp).Take(top);
 
                 foreach (var i in items)
                 {
@@ -218,4 +234,6 @@ public class NewsViewModel
 
         }
     }
+
+
 }

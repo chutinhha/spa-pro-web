@@ -9,7 +9,7 @@
         function initialize() {
             //alert(12345);
             var mapOptions = {
-                center: new google.maps.LatLng(-34.397, 150.644),
+                center: new google.maps.LatLng(10.800195, 106.632641),
                 zoom: 14,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
@@ -18,13 +18,13 @@
             var marker = new google.maps.Marker
     (
         {
-            position: new google.maps.LatLng(-34.397, 150.644),
+            position: new google.maps.LatLng(10.800195, 106.632641),
             map: map,
             title: 'Click me'
         }
     );
             var infowindow = new google.maps.InfoWindow({
-                content: 'Location info:<br/>Country Name:<br/>LatLng:'
+            content: 'Country Name: <b>Spa Nice</b><br/> Địa chỉ:  159 Tân Sơn Nhì, Phường Tân Sơn Nhì,Q.Tân Phú <br/>ĐT:0909-38 79 89 ; 0903-136 732'
             });
             google.maps.event.addListener(marker, 'click', function () {
                 // Calling the open method of the infoWindow 
