@@ -259,11 +259,11 @@
     <div id="header-inside-buttons">
 
         <!-- Top navigation for third party plugins -->
-        <a href="AdSolution.aspx&sub_id=users&action=edit&user_id=1">Welcome, <b>admin</b></a>&nbsp;       
+        <a href="Default.aspx">Welcome, <b>admin</b></a>&nbsp;       
         <!-- / -->
 
         <!-- Top navigation for system plugin only -->
-        <a target="_blank" href="http://demo.opensourcecms.com/templatecms/">site</a>&nbsp;&nbsp;<a href="http://demo.opensourcecms.com/templatecms/admin/index.php?logout=do">logout</a>
+        <a target="_blank" href="Default.aspx">site</a>&nbsp;&nbsp;<a href="Logout.aspx">logout</a>
         <!-- / -->
 
     </div>

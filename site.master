@@ -14,21 +14,20 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/superfish.css" type="text/css" />
     <style type="text/css">
-        .gn_clear
-        {
+        .gn_clear {
             clear: both;
             height: 0;
             line-height: 0;
         }
-        .gn_header_1
-        {
+
+        .gn_header_1 {
             background-color: 0;
             border: 0;
             border-bottom: none;
             padding: 0px;
         }
-        .gn_static_1
-        {
+
+        .gn_static_1 {
             border: 0;
             padding: 0px;
             min-height: 87px;
@@ -36,37 +35,37 @@
             background-color: 0;
             overflow: hidden;
         }
-        .gn_header_2
-        {
+
+        .gn_header_2 {
             background-color: 0;
             border: 0;
             border-bottom: none;
             padding: 0px;
         }
-        .gn_static_2
-        {
+
+        .gn_static_2 {
             border: 0;
-            padding: 0px;       
+            padding: 0px;
             background-color: 0;
             overflow: hidden;
         }
-        .gn_header_3
-        {
+
+        .gn_header_3 {
             background-color: 0;
             border: 0;
             border-bottom: none;
             padding: 0px;
         }
-        .gn_static_3
-        {
+
+        .gn_static_3 {
             border: 0;
             padding: 0px;
             height: 80px;
             background-color: 0;
             overflow: hidden;
         }
-        #ais_50b6df880cba6_wrapper
-        {
+
+        #ais_50b6df880cba6_wrapper {
             width: 866px;
             height: 354px;
         }
@@ -92,14 +91,12 @@
     <script>        !window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
     <script src="js/cufon-yui.js" type="text/javascript"></script>
     <style type="text/css">
-        cufon
-        {
+        cufon {
             text-indent: 0 !important;
         }
-        @media screen,projection
-        {
-            cufon
-            {
+
+        @media screen,projection {
+            cufon {
                 display: inline !important;
                 display: inline-block !important;
                 position: relative !important;
@@ -107,30 +104,29 @@
                 font-size: 1px !important;
                 line-height: 1px !important;
             }
-            cufon cufontext
-            {
-                display: -moz-inline-box !important;
-                display: inline-block !important;
-                width: 0 !important;
-                height: 0 !important;
-                overflow: hidden !important;
-                text-indent: -10000in !important;
-            }
-            cufon canvas
-            {
-                position: relative !important;
-            }
+
+                cufon cufontext {
+                    display: -moz-inline-box !important;
+                    display: inline-block !important;
+                    width: 0 !important;
+                    height: 0 !important;
+                    overflow: hidden !important;
+                    text-indent: -10000in !important;
+                }
+
+                cufon canvas {
+                    position: relative !important;
+                }
         }
-        @media print
-        {
-            cufon
-            {
+
+        @media print {
+            cufon {
                 padding: 0 !important;
             }
-            cufon canvas
-            {
-                display: none !important;
-            }
+
+                cufon canvas {
+                    display: none !important;
+                }
         }
     </style>
     <script src="js/cufon-replace.js" type="text/javascript"></script>
@@ -141,7 +137,7 @@
 
         });
     </script>
-    
+
     <!--[if lt IE 9]>
     <style>
 	 .border, .box-bg, .navigation .menu > li.parent > ul li, .button, div a.readon, .validate, .form-validate .inputbox, .search, #faded .pagination, .gn_static_1 .date, .navigation .menu li.parent ul, 
@@ -156,8 +152,7 @@
     <style type="text/css">
         /* See license.txt for terms of usage */
         /** reset styling **/
-        .firebugResetStyles
-        {
+        .firebugResetStyles {
             z-index: 2147483646 !important;
             top: 0 !important;
             left: 0 !important;
@@ -178,78 +173,65 @@
             background: transparent none !important;
             pointer-events: none !important;
         }
-        
-        .firebugBlockBackgroundColor
-        {
+
+        .firebugBlockBackgroundColor {
             background-color: transparent !important;
         }
-        
-        .firebugResetStyles:before, .firebugResetStyles:after
-        {
+
+        .firebugResetStyles:before, .firebugResetStyles:after {
             content: "" !important;
         }
         /**actual styling to be modified by firebug theme**/
-        .firebugCanvas
-        {
+        .firebugCanvas {
             display: none !important;
         }
-        
+
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-        .firebugLayoutBox
-        {
+        .firebugLayoutBox {
             width: auto !important;
             position: static !important;
         }
-        
-        .firebugLayoutBoxOffset
-        {
+
+        .firebugLayoutBoxOffset {
             opacity: 0.8 !important;
             position: fixed !important;
         }
-        
-        .firebugLayoutLine
-        {
+
+        .firebugLayoutLine {
             opacity: 0.4 !important;
             background-color: #000000 !important;
         }
-        
-        .firebugLayoutLineLeft, .firebugLayoutLineRight
-        {
+
+        .firebugLayoutLineLeft, .firebugLayoutLineRight {
             width: 1px !important;
             height: 100% !important;
         }
-        
-        .firebugLayoutLineTop, .firebugLayoutLineBottom
-        {
+
+        .firebugLayoutLineTop, .firebugLayoutLineBottom {
             width: 100% !important;
             height: 1px !important;
         }
-        
-        .firebugLayoutLineTop
-        {
+
+        .firebugLayoutLineTop {
             margin-top: -1px !important;
             border-top: 1px solid #999999 !important;
         }
-        
-        .firebugLayoutLineRight
-        {
+
+        .firebugLayoutLineRight {
             border-right: 1px solid #999999 !important;
         }
-        
-        .firebugLayoutLineBottom
-        {
+
+        .firebugLayoutLineBottom {
             border-bottom: 1px solid #999999 !important;
         }
-        
-        .firebugLayoutLineLeft
-        {
+
+        .firebugLayoutLineLeft {
             margin-left: -1px !important;
             border-left: 1px solid #999999 !important;
         }
-        
+
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-        .firebugLayoutBoxParent
-        {
+        .firebugLayoutBoxParent {
             border-top: 0 none !important;
             border-right: 1px dashed #E00 !important;
             border-bottom: 1px dashed #E00 !important;
@@ -257,14 +239,12 @@
             position: fixed !important;
             width: auto !important;
         }
-        
-        .firebugRuler
-        {
+
+        .firebugRuler {
             position: absolute !important;
         }
-        
-        .firebugRulerH
-        {
+
+        .firebugRulerH {
             top: -15px !important;
             left: 0 !important;
             width: 100% !important;
@@ -274,9 +254,8 @@
             border-right: 1px dashed #BBBBBB !important;
             border-bottom: 1px solid #000000 !important;
         }
-        
-        .firebugRulerV
-        {
+
+        .firebugRulerV {
             top: 0 !important;
             left: -15px !important;
             width: 14px !important;
@@ -286,20 +265,17 @@
             border-right: 1px solid #000000 !important;
             border-bottom: 1px dashed #BBBBBB !important;
         }
-        
-        .overflowRulerX > .firebugRulerV
-        {
+
+        .overflowRulerX > .firebugRulerV {
             left: 0 !important;
         }
-        
-        .overflowRulerY > .firebugRulerH
-        {
+
+        .overflowRulerY > .firebugRulerH {
             top: 0 !important;
         }
-        
+
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-        .fbProxyElement
-        {
+        .fbProxyElement {
             position: fixed !important;
             pointer-events: auto !important;
         }
@@ -309,70 +285,77 @@
 </head>
 <body onload="initialize();">
     <form id="form1" runat="server">
-    <div class="first ">
-        <!--header-->
-        <div class="header">
-            <div class="head">
-                <h1 id="logo">
-                    <a href="#" title="Naturex">
-                        <img title="Naturex" src="images/logo1.png" alt="Naturex"></a></h1>
-                <ul class="menu-user">
-                    <li class="item20"><a href="#">
-                        <img src="images/icon-1.gif" alt="support" align="left"><span>Hỗ trợ</span></a></li><li
+        <div class="first ">
+            <!--header-->
+            <div class="header">
+                <div class="head">
+                    <h1 id="logo">
+                        <a href="#" title="Naturex">
+                            <img title="Naturex" src="images/logo1.png" alt="Naturex"></a></h1>
+                    <ul class="menu-user">
+                        <%--<li class="item20"><a href="#">
+                            <img src="images/icon-1.gif" alt="support" align="left"><span>Hỗ trợ</span></a></li>
+                        <li
                             class="item51"><a href="#">
                                 <img src="images/icon-2.gif" alt="sign-up-for-email" align="left"><span>Sign-up for
-                                    Email</span></a></li><li class="item497"><a href="#">
-                                        <img src="images/icon-3.gif" alt="site-feedback" align="left"><span>Site Feedback</span></a></li></ul>
-            </div>
-        </div>
-        <div class="main">
-            <div class="navigation">
-                <asp:ContentPlaceHolder runat="server" ID="contentMenu" />
-            </div>
-            <div class="wrapper-content content-top ">
-                <div class="cont_pad">
-                    <asp:ContentPlaceHolder ID="contentBanner" runat="server" />
-                    <asp:ContentPlaceHolder runat="server" ID="contentMani" />
+                                    Email</span></a></li>
+                        <li class="item497"><a href="#">
+                            <img src="images/icon-3.gif" alt="site-feedback" align="left"><span>Site Feedback</span></a></li>
+                  --%>  </ul>
                 </div>
             </div>
-        </div>
-        <!--footer-->
-        <div class="footer">
-            <div class="foot">
-                <div class="nsb_container" align="center">
-                    <a id="l1" target="_blank" rel="nofollow" href="http://www.facebook.com/sharer.php?u=http://livedemo00.template-help.com/joomla_33640/&amp;title=">
-                        <img title="Facebook" src="images/facebook_aqu_24.png" alt="Facebook" border="0" /></a>&nbsp;<a
-                            id="l2" target="_blank" rel="nofollow" href="http://www.myspace.com/Modules/PostTo/Pages/?l=3&amp;u=http://livedemo00.template-help.com/joomla_33640/&amp;title="><img
-                                title="MySpace" src="images/myspace_aqu_24.png" alt="MySpace" border="0" /></a>&nbsp;<a
-                                    id="l3" target="_blank" rel="nofollow" href="http://twitter.com/home?status=http://livedemo00.template-help.com/joomla_33640/&amp;title="><img
-                                        title="Twitter" src="images/twitter_aqu_24.png" alt="Twitter" border="0" /></a>&nbsp;<a
-                                            id="l5" target="_blank" rel="nofollow" href="http://del.icio.us/post?url=http://livedemo00.template-help.com/joomla_33640/&amp;title="><img
-                                                title="Delicious" src="images/delicious_aqu_24.png" alt="Delicious" border="0" /></a>&nbsp;</div>
-                <div style="clear: both;">
+            <div class="main">
+                <div class="navigation">
+                    <asp:ContentPlaceHolder runat="server" ID="contentMenu" />
                 </div>
-                <div>
+                <div class="wrapper-content content-top ">
+                    <div class="cont_pad">
+                        <asp:ContentPlaceHolder ID="contentBanner" runat="server" />
+                        <asp:ContentPlaceHolder runat="server" ID="contentMani" />
+                    </div>
                 </div>
-                <div class="copy">
-                    <span>Nice Spa </span>© 2013
+            </div>
+            <!--footer-->
+            <div class="footer">
+                <div class="foot">
+                    <div class="nsb_container" align="center">
+                        <a id="l1" target="_blank" rel="nofollow" href="http://www.facebook.com/sharer.php?u=http://livedemo00.template-help.com/joomla_33640/&amp;title=">
+                            <img title="Facebook" src="images/facebook_aqu_24.png" alt="Facebook" border="0" /></a>&nbsp;<a
+                                id="l2" target="_blank" rel="nofollow" href="http://www.myspace.com/Modules/PostTo/Pages/?l=3&amp;u=http://livedemo00.template-help.com/joomla_33640/&amp;title="><img
+                                    title="MySpace" src="images/myspace_aqu_24.png" alt="MySpace" border="0" /></a>&nbsp;<a
+                                        id="l3" target="_blank" rel="nofollow" href="http://twitter.com/home?status=http://livedemo00.template-help.com/joomla_33640/&amp;title="><img
+                                            title="Twitter" src="images/twitter_aqu_24.png" alt="Twitter" border="0" /></a>&nbsp;<a
+                                                id="l5" target="_blank" rel="nofollow" href="http://del.icio.us/post?url=http://livedemo00.template-help.com/joomla_33640/&amp;title="><img
+                                                    title="Delicious" src="images/delicious_aqu_24.png" alt="Delicious" border="0" /></a>&nbsp;
+                    </div>
+                    <div style="clear: both;">
+                    </div>
+                    <div>
+                    </div>
+                    <div class="copy">
+                        <span>Nice Spa </span>© 2013
                     <p>
                         159 Tân Sơn Nhì, Phường Tân Sơn Nhì,Q.Tân Phú
                     </p>
-                    <p>
-                        ĐT:0909-38 79 89 ; 0903-136 732</p>
-                    <!-- {%FOOTER_LINK} -->
+                        <p>
+                            ĐT:0909-38 79 89 ; 0903-136 732
+                        </p>
+                        <!-- {%FOOTER_LINK} -->
+                    </div>
                 </div>
             </div>
+            <script type="text/javascript">            Cufon.now(); </script>
         </div>
-        <script type="text/javascript">            Cufon.now(); </script>
-    </div>
-    <div class="fixed-function">
-    <div class="_feedBackBtn feedback">
-    <a href="ymsgr:sendim?damchithoai87" style="color:White;" title="hỗ trợ online" >Đàm Chí Thoại<br /><img border="0" src="http://opi.yahoo.com/online?u=damchithoai87&amp;m=g&amp;t=2" alt="Đàm chí thoại" /></a>
-    <br />
-    <a href="ymsgr:sendim?lhchinhit"  style="color:White;" title="hỗ trợ online" >lê Hồng Chinh<br /><img border="0" src="http://opi.yahoo.com/online?u=lhchinhit&amp;m=g&amp;t=2" alt="Lê Hồng Chinh" /></a>
-    </div>
-    <a class="scroll-top" href="#"></a>
-    </div>
+        <div class="fixed-function">
+            <div class="_feedBackBtn feedback">
+                <a href="ymsgr:sendim?damchithoai87" style="color: White;" title="hỗ trợ online">Đàm Chí Thoại<br />
+                    <img border="0" src="http://opi.yahoo.com/online?u=damchithoai87&amp;m=g&amp;t=2" alt="Đàm chí thoại" /></a>
+                <br />
+                <a href="ymsgr:sendim?lhchinhit" style="color: White;" title="hỗ trợ online">lê Hồng Chinh<br />
+                    <img border="0" src="http://opi.yahoo.com/online?u=lhchinhit&amp;m=g&amp;t=2" alt="Lê Hồng Chinh" /></a>
+            </div>
+            <a class="scroll-top" href="#"></a>
+        </div>
     </form>
 </body>
 </html>

@@ -94,9 +94,9 @@
 
                                                                 </div>
                                                                 <div class="row-1">
-                                                                    <h3><%=pro.Name %></h3>
+                                                                    <a  href='Product_Detail.aspx?id=<%=pro.ID %>'><h3><%=pro.Name %></h3></a>
                                                                     <div class="wrapper">
-                                                                        <img class="img-left" src='<%=pro.Link_Image_Small.Replace("~/","") %>' alt="">
+                                                                       <a  href='Product_Detail.aspx?id=<%=pro.ID %>'> <img class="img-left" src='<%=pro.Link_Image_Small.Replace("~/","") %>' alt=""></a>
                                                                         <strong>Price: <%= Utilities.FormatMoneyTypeFrice( pro.Price )%></strong>
                                                                         <%=pro.Descrition %>
                                                                     </div>

@@ -14,7 +14,7 @@
     <!-- /Block_menu -->
     <!-- Block_sub_menu -->
     <ul id="sub-menu">
-        <li><a href="?id=pages" >Trang </a></li>
+        <li><a href="Default.aspx" >Trang </a></li>
         <li><a href="EditPrice.aspx" class="sub-current">Báo giá</a></li>
     </ul>
     <!-- /Block_sub_menu -->

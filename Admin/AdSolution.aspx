@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cntMenu" Runat="Server">
     <ul id="menu">
-                <li><a href="?id=pages" >Nội dung</a></li>
+                <li><a href="Default.aspx" >Nội dung</a></li>
                 <li><a href="AdProduct.aspx" >Sản phẩm</a></li>
                 <li><a href="AdService.aspx">Dịch vụ</a></li>
                 <li><a href="AdSolution.aspx" class="current">Giải pháp</a></li>
