@@ -78,7 +78,7 @@
                                                                     <asp:Repeater runat="server" ID="repProducts">
                                                                         <ItemTemplate>
 
-                                                                            <div class="col-1">
+                                                                            <div class= "col-1">
                                                                                 <h4><a href='Product_Detail.aspx?id=<%#Eval("ID") %>'><%#Eval("Name") %> </a></h4>
                                                                                 <a href='Product_Detail.aspx?id=<%#Eval("ID") %>'><img class="img-left" src='<%#Eval("Link_Image_Small").ToString().Replace("~/","") %>' alt=""></a>
                                                                                 <p><strong>Price: <%# Utilities.FormatMoneyTypeFrice(Eval("Price").ToString()) %></strong> </p>
@@ -106,7 +106,7 @@
                                                                 <div class="wrapper row-2">
                                                                     <div class="col-1">
 
-                                                                        <div class="p1">
+                                                                        <div class="p1" style="background:none;">
                                                                             <ul class="list">
                                                                                 <li><a id="lt1">Những nguyên liệu tốt nhất từ đại dương và thảo mộc </a></li>
                                                                                 <li><a id="lt2">Hiệu quả trị liệu được đảm bảo </a></li>

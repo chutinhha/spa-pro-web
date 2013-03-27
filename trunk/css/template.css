@@ -2911,6 +2911,13 @@ ul.list {
 .img-left {
     float: left;
     margin: 0 20px 16px 0;
+    width:230px;
+}
+
+.img-new {
+    float: left;
+    margin: 0 20px 16px 0;
+    width:150px;
 }
 
 .img-left1 {

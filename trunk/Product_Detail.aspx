@@ -75,7 +75,7 @@
                                                                     <div class="col-1">
                                                                         <h3>Sản phẩm
                                                                         </h3>
-                                                                        <div class="p1">
+                                                                        <div class="p2" style="background:none;">
                                                                             <ul class="list">
                                                                                 <asp:Repeater runat="server" ID="repList">
                                                                                     <ItemTemplate>
@@ -103,7 +103,7 @@
                                                                 <div class="wrapper row-2">
                                                                     <div class="col-1">
 
-                                                                        <div class="p1">
+                                                                        <div class="p2" style="background:none;">
                                                                             <ul class="list">
                                                                                 <li><a id="lt1">Những nguyên liệu tốt nhất từ đại dương và thảo mộc </a></li>
                                                                                 <li><a id="lt2">Hiệu quả trị liệu được đảm bảo </a></li>
